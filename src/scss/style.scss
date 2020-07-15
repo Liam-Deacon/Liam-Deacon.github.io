@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+@import url('https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css');
+
+@import url('https://cdn.lineicons.com/2.0/LineIcons.css');
+
+@import url('https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css');
+
+@import url('https://cdn.jsdelivr.net/npm/jquery-animated-headlines@1.0.0/dist/css/jquery.animatedheadline.css');
+
+@import 'variables';
+
+@import 'animations/typing';
+@import 'animations/pulse';
+
+// Portfolio
+// Styling for the portfolio grid section
+$transition-base: all .2s ease-in-out;
+
+.portfolio {
+    .portfolio-item {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        max-width: 25rem;
+        border-radius: $border-radius;
+        overflow: hidden;
+        .portfolio-item-caption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: $transition-base;
+            opacity: 0;
+            background-color: fade-out($primary, 0.1);
+            &:hover {
+                opacity: 1;
+            }
+            .portfolio-item-caption-content {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+// Styling for the portfolio modals
+.portfolio-modal {
+    .portfolio-modal-title {
+        font-size: 2.25rem;
+        line-height: 2rem;
+        // @include media-breakpoint-up(lg) {
+        //     font-size: 3rem;
+        //     line-height: 2.5rem;
+        // }
+    }
+    .close {
+        position: absolute;
+        z-index: 1;
+        right: 1.5rem;
+        top: 1rem;
+        font-size: 3rem;
+        line-height: 3rem;
+        color: $primary;
+        opacity: 1;
+    }
+}
+// end Portfolio
+
+// Styling for page sections
+.page-section {
+    padding: 6rem 0;
+    .page-section-heading {
+        font-size: 2.25rem;
+        line-height: 2rem;
+    }
+    // @include media-breakpoint-up(lg) {
+    //     .page-section-heading {
+    //         font-size: 3rem;
+    //         line-height: 2.5rem;
+    //     }
+    // }
+}
+
+footer {
+   text-align: center;
+   font-size: 0.95rem;
+   u {
+      cursor: pointer;
+   }
+}
+
+.fa-stack {
+   cursor: help;
+}
+
+.navbar {
+   font-family: "Source Code Pro";
+   top: 0px !important;
+   width: 100% !important;
+   position: fixed !important;
+   z-index: 1000;
+}
+
+u.dotted_underline {
+   text-decoration-style: dotted;
+   cursor: pointer;
+   span {
+       text-decoration-style: none;
+   }
+}
+
+i.fa-star {
+  color: gold;
+  text-shadow: 0 0 8px orange;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: darkorange;
+  font-size: 0.85rem;
+  padding-top: 75%;
+  left: -30px;
+}
+
+i.no-fill-star {
+  color: white;
+  text-shadow: 0 0 8px gray;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: gray;
+}
+
+.lang-pic {
+   padding-bottom: 110px;
+}
+
+.lang-pic-box:hover {
+   transform: scale(1.1);
+   transition: all .2s ease-in-out;
+}
+
+.lang-pic-tooltip {
+   height: 120px;
+   width: 120px;
+}
+
+.popup-image {
+   float: left;
+   margin-right: 5px;
+   height: 90px;
+   width: auto;
+}
+
+.skill-tag {
+  top: 2.5px;
+  right: 2.5px;
+  left: 2.5px;
+  bottom: 2.5px;
+  color: inherit;
+  background: transparent;
+  border-radius: 8px;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-align: center;
+  border-style: outset;
+  border-width: 2.5px;
+}
+
+.sql-icon {
+   content: "SQL";
+   color: green;
+}
+
+.fuzzy-search {
+   border-radius: 5px;
+   border-width: 2px;
+}
+
+ul.list > li {
+    display: inline-block;
+    /* You can also add some margins here to make it look prettier */
+    zoom:1;
+    *display:inline;
+    /* this fix is needed for IE7- */
+}
+
+.lang-text {
+   text-align: center;
+   font-size: small;
+   font-weight: 600;
+   left: -10px;
+   padding-top: 14px;
+}
+
+.navbar li:hover {
+   background: linear-gradient(90deg, goldenrod, #FF4848);
+   -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+   opacity: 1;
+   transition: all 0.3s ease;
+}
+
+li.dropdown {
+   :hover {
+      -webkit-text-fill-color: black;
+      background: white;
+   }
+}
+
+.navbar li.active {
+   :hover {
+      -webkit-background-clip: text;
+      // -webkit-text-fill-color: normal;
+      background: transparent;
+      border-radius: 50%;
+      margin: 0px;
+      height: 100%;
+      width: 100%;
+
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+      transform: scale(1);
+      animation: pulse 2s infinite;
+   }
+  border-bottom: 3px solid goldenrod;
+  font-weight: bold;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: goldenrod;
+  $cubic: cubic-bezier(0.64, 0.01, 0.07, 1.65);
+  $transition: 0.6s $cubic;
+}
+
+.ah-headline {
+   text-align: center;
+}
+
+body {
+   width: 100vw;
+   background-color: #1D1D1D;
+   margin: 0;
+   font-family: helvetica;
+}
+
+.card {
+   a:hover {
+      color: inherit;
+   }
+}
+
+.close {
+   font-size: large;
+}
+
+.wrapper {
+   width: 100vw;
+   margin: 0 auto;
+   height: 400px;
+   background-color: #161616;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 767px) {
+   .wrapper {
+      height: 700px;
+   }
+}
+
+.content {
+   max-width: 1024px;
+   width: 100%;
+   padding: 0 4%;
+   padding-top: 25px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+   .content {
+      padding-top: 30px;
+      flex-direction: column;
+   }
+}
+
+
+.card {
+   width: 100%;
+   max-width: 300px;
+   min-width: 200px;
+   height: 250px;
+   background-color: #292929;
+   margin: 10px;
+   border-radius: 10px;
+   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+   border: 2px solid rgba(7, 7, 7, 0.12);
+   font-size: 16px;   
+   transition: all 0.3s ease;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.icon {
+   margin: 0 auto;
+   width: 100%;
+   height: 80px;
+   max-width:80px;
+   background: linear-gradient(90deg, gold 0%, #FF4848 50%, rgba(0, 0, 0, 0.28) 60%);
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   transition: all 0.8s ease;
+   background-position: 0px;
+   background-size: 200px;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.card .title {
+   width: 100%;
+   margin: 0;
+   text-align: center;
+   margin-top: 30px;
+   color: white;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+}
+
+.card .text {
+   width: 80%;
+   margin: 0 auto;
+   font-size: 13px;
+   text-align: center;
+   margin-top: 20px;
+   color: white;
+   font-weight: 200;
+   letter-spacing: 2px;
+   opacity: 0;
+   max-height:0;
+   transition: all 0.3s ease;
+}
+
+.card:hover {
+   height: 270px;
+}
+
+.card:hover .info {
+   height: 90%;
+}
+
+.card:hover .text {
+   transition: all 0.3s ease;
+   opacity: 1;
+   max-height:40px;
+}
+
+.card:hover .icon {
+   background-position: -120px;
+   transition: all 0.3s ease;
+}
+
+.card:hover .icon i {
+   background: linear-gradient(90deg, goldenrod, #FF4848);
+   -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+   opacity: 1;
+   transition: all 0.3s ease;
+}
+
+@import 'contact';
