@@ -80,17 +80,8 @@ $transition-base: all .2s ease-in-out;
     // }
 }
 
-footer {
-   text-align: center;
-   font-size: 0.95rem;
-   u {
-      cursor: pointer;
-   }
-}
 
-.fa-stack {
-   cursor: help;
-}
+
 
 .navbar {
    font-family: "Source Code Pro";
@@ -108,66 +99,6 @@ u.dotted_underline {
    }
 }
 
-i.fa-star {
-  color: gold;
-  text-shadow: 0 0 8px orange;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: darkorange;
-  font-size: 0.85rem;
-  padding-top: 75%;
-  left: -30px;
-}
-
-i.no-fill-star {
-  color: white;
-  text-shadow: 0 0 8px gray;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: gray;
-}
-
-.lang-pic {
-   padding-bottom: 110px;
-}
-
-.lang-pic-box:hover {
-   transform: scale(1.1);
-   transition: all .2s ease-in-out;
-}
-
-.lang-pic-tooltip {
-   height: 120px;
-   width: 120px;
-}
-
-.popup-image {
-   float: left;
-   margin-right: 5px;
-   height: 90px;
-   width: auto;
-}
-
-.skill-tag {
-  top: 2.5px;
-  right: 2.5px;
-  left: 2.5px;
-  bottom: 2.5px;
-  color: inherit;
-  background: transparent;
-  border-radius: 8px;
-  padding-right: 3px;
-  padding-left: 3px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  text-align: center;
-  border-style: outset;
-  border-width: 2.5px;
-}
-
-.sql-icon {
-   content: "SQL";
-   color: green;
-}
-
 .fuzzy-search {
    border-radius: 5px;
    border-width: 2px;
@@ -179,14 +110,6 @@ ul.list > li {
     zoom:1;
     *display:inline;
     /* this fix is needed for IE7- */
-}
-
-.lang-text {
-   text-align: center;
-   font-size: small;
-   font-weight: 600;
-   left: -10px;
-   padding-top: 14px;
 }
 
 .navbar li:hover {
@@ -224,10 +147,6 @@ li.dropdown {
    -webkit-text-fill-color: goldenrod;
   $cubic: cubic-bezier(0.64, 0.01, 0.07, 1.65);
   $transition: 0.6s $cubic;
-}
-
-.ah-headline {
-   text-align: center;
 }
 
 body {
@@ -378,4 +297,6 @@ body {
    transition: all 0.3s ease;
 }
 
+@import 'profile';
 @import 'contact';
+@import 'footer';

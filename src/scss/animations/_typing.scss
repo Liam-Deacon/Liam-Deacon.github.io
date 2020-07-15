@@ -1,5 +1,11 @@
 // Styling for css-typing.js
 
+@use 'variables';
+
+.ah-headline {
+  text-align: center;
+}
+
 .css-typing p {
     border-right: .15em solid orange;
     font-family: "Courier";
