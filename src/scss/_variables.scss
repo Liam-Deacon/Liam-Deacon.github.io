@@ -1,3 +1,4 @@
+// Shared styling across sheets
 $primary: #292929;
 $primary_alt: #f8f8f8;
 $social_icon_color: orange;  // #02c2c7;
@@ -37,3 +38,6 @@ $spacer: 1rem;
 
 // Override the spacing between columns to add symmetry to the layout
 $grid-gutter-width: $spacer * 3;
+
+// Set transitions
+$transition-base: all 0.3s ease;

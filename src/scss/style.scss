@@ -13,58 +13,6 @@
 @import 'animations/typing';
 @import 'animations/pulse';
 
-// Portfolio
-// Styling for the portfolio grid section
-$transition-base: all .2s ease-in-out;
-
-.portfolio {
-    .portfolio-item {
-        cursor: pointer;
-        position: relative;
-        display: block;
-        max-width: 25rem;
-        border-radius: $border-radius;
-        overflow: hidden;
-        .portfolio-item-caption {
-            position: absolute;
-            top: 0;
-            left: 0;
-            transition: $transition-base;
-            opacity: 0;
-            background-color: fade-out($primary, 0.1);
-            &:hover {
-                opacity: 1;
-            }
-            .portfolio-item-caption-content {
-                font-size: 1.5rem;
-            }
-        }
-    }
-}
-
-// Styling for the portfolio modals
-.portfolio-modal {
-    .portfolio-modal-title {
-        font-size: 2.25rem;
-        line-height: 2rem;
-        // @include media-breakpoint-up(lg) {
-        //     font-size: 3rem;
-        //     line-height: 2.5rem;
-        // }
-    }
-    .close {
-        position: absolute;
-        z-index: 1;
-        right: 1.5rem;
-        top: 1rem;
-        font-size: 3rem;
-        line-height: 3rem;
-        color: $primary;
-        opacity: 1;
-    }
-}
-// end Portfolio
-
 // Styling for page sections
 .page-section {
     padding: 6rem 0;
@@ -81,16 +29,6 @@ $transition-base: all .2s ease-in-out;
 }
 
 
-
-
-.navbar {
-   font-family: "Source Code Pro";
-   top: 0px !important;
-   width: 100% !important;
-   position: fixed !important;
-   z-index: 1000;
-}
-
 u.dotted_underline {
    text-decoration-style: dotted;
    cursor: pointer;
@@ -99,55 +37,15 @@ u.dotted_underline {
    }
 }
 
+
+
 .fuzzy-search {
    border-radius: 5px;
    border-width: 2px;
 }
 
-ul.list > li {
-    display: inline-block;
-    /* You can also add some margins here to make it look prettier */
-    zoom:1;
-    *display:inline;
-    /* this fix is needed for IE7- */
-}
 
-.navbar li:hover {
-   background: linear-gradient(90deg, goldenrod, #FF4848);
-   -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-   opacity: 1;
-   transition: all 0.3s ease;
-}
 
-li.dropdown {
-   :hover {
-      -webkit-text-fill-color: black;
-      background: white;
-   }
-}
-
-.navbar li.active {
-   :hover {
-      -webkit-background-clip: text;
-      // -webkit-text-fill-color: normal;
-      background: transparent;
-      border-radius: 50%;
-      margin: 0px;
-      height: 100%;
-      width: 100%;
-
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-      transform: scale(1);
-      animation: pulse 2s infinite;
-   }
-  border-bottom: 3px solid goldenrod;
-  font-weight: bold;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: goldenrod;
-  $cubic: cubic-bezier(0.64, 0.01, 0.07, 1.65);
-  $transition: 0.6s $cubic;
-}
 
 body {
    width: 100vw;
@@ -297,6 +195,8 @@ body {
    transition: all 0.3s ease;
 }
 
+@import 'navbar';
 @import 'profile';
+@import 'portfolio';
 @import 'contact';
 @import 'footer';

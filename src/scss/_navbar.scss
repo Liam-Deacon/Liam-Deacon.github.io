@@ -1,0 +1,47 @@
+// Styling for Navigation bar
+@use 'variables';
+
+.navbar {
+    font-family: "Source Code Pro";
+    top: 0px !important;
+    width: 100% !important;
+    position: fixed !important;
+    z-index: 1000;
+}
+ 
+ .navbar li:hover {
+    background: linear-gradient(90deg, goldenrod, #FF4848);
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    opacity: 1;
+    transition: all 0.3s ease;
+ }
+ 
+ li.dropdown {
+    :hover {
+       -webkit-text-fill-color: black;
+       background: white;
+    }
+ }
+ 
+ .navbar li.active {
+    :hover {
+       -webkit-background-clip: text;
+       // -webkit-text-fill-color: normal;
+       background: transparent;
+       border-radius: 50%;
+       margin: 0px;
+       height: 100%;
+       width: 100%;
+ 
+       box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+       transform: scale(1);
+       animation: pulse 2s infinite;
+    }
+   border-bottom: 3px solid goldenrod;
+   font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: goldenrod;
+   $cubic: cubic-bezier(0.64, 0.01, 0.07, 1.65);
+   $transition: 0.6s $cubic;
+ }
