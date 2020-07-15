@@ -9,6 +9,8 @@
         "build:scripts": "node scripts/build-scripts.js",
         "build:scss": "./node_modules/.bin/sass -I src/scss src/scss/:dist/css/",
         "clean": "node scripts/clean.js",
+        "deploy": "npm run build:prod && npm run deploy:gh-pages",
+        "deploy:gh-pages": "git subtree push --prefix dist origin gh-pages",
         "format": "npm run format:prettier && npm run format:html",
         "format:prettier": "node_modules/.bin/prettier --config .prettierrc \"src/**/*.{ts,css,less,js}\" --write",
         "format:html": "node scripts/glob-ls.js 'src/**/*.html' 'build/**/*.html.ejs' | xargs node_modules/.bin/html-beautify -r",
