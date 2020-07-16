@@ -122,7 +122,7 @@ gulp.task('stream', () =>
 
 function renderTemplates() {
   // Gets .html and .nunjucks files in pages
-  return gulp.src('src/**/*.+(html|nunjucks)')
+  return gulp.src('src/**/*.+(html|nunjucks|njk)')
   // Renders template with nunjucks
   .pipe(data(() => { require('./src/data.json') }))
   .pipe(nunjucksRender({
