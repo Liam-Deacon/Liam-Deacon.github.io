@@ -17,6 +17,8 @@ const embedlr = require('gulp-embedlr');
 const ecstatic = require('ecstatic');
 const imagemin = require('gulp-imagemin');
 const browserify = require('gulp-browserify');
+const nunjucksRender = require('gulp-nunjucks-render');
+const data = require('gulp-data');
 // const buffer = require("vinyl-buffer");
 
 const livereloadport = 35729, serverport = 9999;
@@ -118,11 +120,25 @@ gulp.task('stream', () =>
         )
 );
 
+function renderTemplates() {
+  // Gets .html and .nunjucks files in pages
+  return gulp.src('src/**/*.+(html|nunjucks)')
+  // Renders template with nunjucks
+  .pipe(data(() => { require('./src/data.json') }))
+  .pipe(nunjucksRender({
+      path: ['src/templates']
+    }))
+  // output files in app folder
+  .pipe(gulp.dest('dest'))
+}
+gulp.task('nunjucks', renderTemplates);
+exports.nunjucks = renderTemplates;
+
 function processScripts() {
     return gulp.src(['src/**/*.js'])
         .pipe(browserify())
-        .pipe(concat('dest.js'))
-        .pipe(gulp.dest('dist/build'))
+        .pipe(concat('app.js'))
+        .pipe(gulp.dest('dist/js/'))
         .pipe(refresh(lrserver));
 }
 gulp.task('scripts', processScripts);
