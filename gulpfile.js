@@ -1,3 +1,4 @@
+const http = require('http');
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 // const imagemin = require('gulp-imagemin');
@@ -7,6 +8,19 @@ const uglify = require('gulp-uglify');
 // const babel = require('gulp-babel');
 const watch = require('gulp-watch');
 const run = require('gulp-run-command').default;
+const concat = require('gulp-concat');
+const refresh = require('gulp-livereload');
+const lr = require('tiny-lr');
+const lrserver = lr();
+const minifyCSS = require('gulp-minify-css');
+const embedlr = require('gulp-embedlr');
+const ecstatic = require('ecstatic');
+const imagemin = require('gulp-imagemin');
+const browserify = require('gulp-browserify');
+// const buffer = require("vinyl-buffer");
+
+const livereloadport = 35729, serverport = 9999;
+
 
 // use npm tasks
 async function npmBuild(cb) {
@@ -51,20 +65,14 @@ function bsInit() {
   });
 }
 
-gulp.task('sync', function() {
+function sync() {
   bsInit();
   gulp.watch(['./dist/**/*.js', './dist/**/*.html', './dist/**/*.css']).on("change", browserSync.reload);
-});
-
-
-function watchFiles(cb) {
-  gulp.watch('src/scss/*.scss', generateCSS);
-  gulp.watch('src/html/*.html', npmFormat);
 }
-exports.watch = watchFiles;
+gulp.task('sync', sync);
+
 
 gulp.task('default', gulp.series('sync'));
-
 
 
 gulp.task('html', () => 
@@ -109,3 +117,65 @@ gulp.task('stream', () =>
                         )
         )
 );
+
+gulp.task('scripts', function() {
+    return gulp.src(['src/**/*.js'])
+        .pipe(browserify())
+        .pipe(concat('dest.js'))
+        .pipe(gulp.dest('dist/build'))
+        .pipe(refresh(lrserver));
+});
+
+gulp.task('styles', function() {
+    return gulp.src(['src/scss/*.scss'])
+        .pipe(sass())
+        .on('error', console.log)
+        .pipe(minifyCSS())
+        .pipe(gulp.dest('dist/build'))
+        .pipe(browserSync.stream())
+});
+
+gulp.task('serve', function() {
+  //Set up your static fileserver, which serves files in the build dir
+  http.createServer(ecstatic({ root: __dirname + '/dist' })).listen(serverport);
+
+  //Set up your livereload server
+  lrserver.listen(livereloadport);
+});
+
+
+function renderHTML() {
+    return gulp.src("src/*.html")
+        .pipe(embedlr())
+        .pipe(gulp.dest('dist/'))
+        // .pipe(refresh(lrserver));
+}
+gulp.task('html', renderHTML);
+
+gulp.task('assets', function() {
+    return gulp.src("dist/assets/**")
+        .pipe(imagemin({optimizationLevel: 5}))
+        .pipe(gulp.dest('dist/assets/'))
+        .pipe(refresh(lrserver));
+});
+
+//compile scss into css
+function style() {
+  return gulp.src('src/scss/**/*.scss')
+  .pipe(sass().on('error', sass.logError))
+  .pipe(gulp.dest('dist/css'))
+  .pipe(browserSync.stream({match: '**/*.css'}));
+}
+
+function watchFiles() {
+  bsInit()
+  gulp.watch('src/scss/**/*.scss', style).on('change', browserSync.reload);
+  gulp.watch('src/*.html', renderHTML).on('change', browserSync.reload);
+  gulp.watch('dist/css/*.css').on('change', browserSync.reload);
+  gulp.watch('dist/**.html').on('change', browserSync.reload);
+  gulp.watch('./js/**/*.js').on('change', browserSync.reload);
+}
+exports.style = style;
+exports.watch = watchFiles;
+
+gulp.task('default', gulp.series(['scripts', 'styles', 'html', 'assets', watchFiles]));
