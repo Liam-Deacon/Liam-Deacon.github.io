@@ -3,10 +3,56 @@
 @use 'variables';
 
 footer {
-    text-align: center;
-    font-size: 0.95rem;
-    u {
-       cursor: pointer;
-    }
+   background: $primary_alt;
+   // padding-left: 20%;
+   // width: 80%;
+   // padding-top: 20px;
+   padding-bottom: 20px;
+   text-align: center;
+   font-size: 1.5rem;
+   u {
+      cursor: pointer;
+   }
+
+   .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+   }
+
+   .col {
+      flex: 50%;
+      padding: 0 4px;
+   }
+
+   img {
+      vertical-align: middle;
+      display: inline-flex;
+      // max-height: 32px;
+      // width: auto;
+      max-height: 100px;
+      padding: 15px;
+      cursor: pointer;
+
+      transition: all 0.5s ease-in-out;
+      // transition-delay: 0.2s;
+      // transition-duration: 1s;
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+   }
+
+   img:hover {
+      transform: scale(1.1) 0.5s;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      filter: invert(100);
+   }
+
+   hr {
+      border: 1.5px solid gray;
+      width: 10%;
+      padding-left: 40%;
+      padding-right: 40%;
+   }
  }
  

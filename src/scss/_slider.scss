@@ -1,0 +1,73 @@
+// Styling for sliders and switches
+@use 'variables';
+
+/* The switch - the box around the slider */
+
+$slider_horizontal_position: 0.1rem; 
+$slider_width: 5rem;
+$slider_height: 2rem;
+
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: $slider_width;
+  height: $slider_height;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+// slider circle
+.slider:before {
+  position: absolute;
+  content: "";
+  height: $slider_height;
+  width: $slider_height;
+  left: $slider_horizontal_position;
+  bottom: $slider_horizontal_position;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: $primary;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 5px $primary;
+}
+
+$slider_translate_x: $slider_width - $slider_height;
+
+input:checked + .slider:before {
+  -webkit-transform: translateX($slider_translate_x);
+  -ms-transform: translateX($slider_translate_x);
+  transform: translateX($slider_translate_x);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 
