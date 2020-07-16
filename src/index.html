@@ -1,455 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" /> <meta http-equiv="Pragma" content="no-cache" /> <meta http-equiv="Expires" content="0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
- <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css">
+    <!-- Turn off caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+        
+    <!-- Add a little personal touch -->
+    <title>Liam Deacon | Developer & Scientist</title>
+    <meta name="description" content="Hi! I’m a developer & data scientist who likes to code. I’m interested in AI, technology, video games and lots of other stuff.">
 
- <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <span class="navbar-brand" href="#" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Read on to find out about who I am and what I do..."><i class="fi fi-male">&nbsp;</i>Liam Deacon <i class="fi fi-angle-dobule-right normal"></i></span>
-    </div>
-    <ul class="nav navbar-nav">
-       <li class="active">
-          <a href="#launchpad">
-            <i class="lni lni-rocket">&nbsp;</i>Launchpad
-          </a>
-      </li>
-      <li>
-         <a href="#profile">
-            <i class="lni lni-support">&nbsp;</i>Profile
-         </a>
-      </li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="lni lni-construction">&nbsp;</i>Projects
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-           <li><a href="#"><i><ion-icon name="construct-outline"></ion-icon>&nbsp;</i>Software Engineering</a></li>
-          <li><a href="#"><i class="fi fi-laboratory normal">&nbsp;</i>Data Science</a></li>
-           <li><a href="#"><i><ion-icon name="library-outline"></ion-icon>&nbsp;</i>Education</a></li>
-          <li><a href="#"><i class="lni lni-code">&nbsp;</i>Web Development</a></li>
-          <li><a href="#"><i><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path d="M19.479 10.092c-.212-3.951-3.473-7.092-7.479-7.092s-7.267 3.141-7.479 7.092c-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408zm-8.479 3.475l-2.229.933 2.229.93v1.57l-4-1.701v-1.599l4-1.7v1.567zm6 1.732l-4 1.701v-1.57l2.229-.93-2.229-.933v-1.567l4 1.701v1.598z"/></svg>&nbsp</i>DevOps & Cloud</a></li>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://media-exp1.licdn.com/dms/image/C5603AQHVdBBP-nHQ5g/profile-displayphoto-shrink_400_400/0?e=1600300800&v=beta&t=7UcGQumv_GmWneF6aT2QR9tH7KoyT4d0-hc65KzeuqY">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://media-exp1.licdn.com/dms/image/C5603AQHVdBBP-nHQ5g/profile-displayphoto-shrink_400_400/0?e=1600300800&v=beta&t=7UcGQumv_GmWneF6aT2QR9tH7KoyT4d0-hc65KzeuqY">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://media-exp1.licdn.com/dms/image/C5603AQHVdBBP-nHQ5g/profile-displayphoto-shrink_400_400/0?e=1600300800&v=beta&t=7UcGQumv_GmWneF6aT2QR9tH7KoyT4d0-hc65KzeuqY">
+    
+    <!--<link rel="manifest" href="/src/images/favicon/site.sitewebmanifest">-->
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/theme.css"> -->
+
+</head>
+
+<body class="theme theme-light theme-dark">
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <span class="navbar-brand" href="#" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Read on to find out about who I am and what I do..."><i class="fi fi-male">&nbsp;</i>Liam Deacon <i class="fi fi-angle-dobule-right normal"></i></span>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="#launchpad">
+                    <i class="lni lni-rocket">&nbsp;</i>Launchpad
+                </a>
+            </li>
+            <li>
+                <a href="#profile">
+                    <i class="lni lni-support">&nbsp;</i>Profile
+                </a>
+            </li>
+            <li>
+            <!-- <li class="dropdown"> -->
+                <a href="#projects"><i class="lni lni-construction">&nbsp;</i>Projects</a>
+                <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="lni lni-construction">&nbsp;</i>Projects
+                    <span class="caret"></span></a> -->
+                <!-- <ul class="dropdown-menu">
+                    <li><a href="#"><i>
+                                <ion-icon name="construct-outline"></ion-icon>&nbsp;
+                            </i>Software Engineering</a></li>
+                    <li><a href="#"><i class="fi fi-laboratory normal">&nbsp;</i>Data Science</a></li>
+                    <li><a href="#"><i>
+                                <ion-icon name="library-outline"></ion-icon>&nbsp;
+                            </i>Education</a></li>
+                    <li><a href="#"><i class="lni lni-code">&nbsp;</i>Web Development</a></li>
+                    <li><a href="#"><i><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
+                                    <path d="M19.479 10.092c-.212-3.951-3.473-7.092-7.479-7.092s-7.267 3.141-7.479 7.092c-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408zm-8.479 3.475l-2.229.933 2.229.93v1.57l-4-1.701v-1.599l4-1.7v1.567zm6 1.732l-4 1.701v-1.57l2.229-.93-2.229-.933v-1.567l4 1.701v1.598z" /></svg>&nbsp</i>DevOps & Cloud</a></li>
+                </ul> -->
+            </li>
+            <li>
+                <a href="#contact">
+                    <i class="fi fi-commenting normal">&nbsp;</i>Contact
+                </a>
+            </li>
+            <li class="theme-toggle header-link">
+                <a href="#" >
+                    <!-- Rounded switch -->
+                    <i class="theme-icon lni lni-sun"></i>&nbsp;Theme:&nbsp;
+                    <label class="switch" title="Toggle Night Mode" >
+                        <input id="theme" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </a>
+            </li>
+
         </ul>
-      </li>
-       <li><a href="#contact">
-<!--           <i><ion-icon name="at-outline"></ion-icon>&nbsp;</i> -->
-          <i class="fi fi-commenting normal">&nbsp;</i>Contact</a></li>
-    </ul>
-  </div>
+    </div>
 </nav>
 
 
 <!-- LaunchPad section -->
-           
 <section id="launchpad">
-   <div class="selector" style="padding-top: 40px">
-       <h1 class="ah-headline">
-           <span>Liam Deacon</span><br>
-           <span class="ah-words-wrapper">
-              <b class="is-visible" style="color: orange">Software Engineer&nbsp;</b>
-               <b style="color: goldenrod">Data Scientist&nbsp;</b>
-               <b style="color: #E9DD6C">Web Developer&nbsp;</b>
-               <b style="color: #E96208">Researcher&nbsp;</b>
-           </span>
-       </h1>
-   </div>
+    <div class="selector" style="padding-top: 40px">
+         <br><br>
+         <h1 class="ah-headline">
+            <span>Liam Deacon</span><br>&nbsp;   
+            <span class="ah-words-wrapper">
+                <b class="is-visible" style="color: orange">Software Engineer&nbsp;</b>
+                <b style="color: goldenrod">Data Scientist&nbsp;</b>
+                <b style="color: #E9DD6C">Web Developer&nbsp;</b>
+                <b style="color: #E96208">Researcher&nbsp;</b>
+            </span>
+        </h1>
+    </div>
 
-   <div class="css-typing"> 
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello there, I'm Liam!</p>
-      <p>Please scroll down to learn more...</p>
-   </div>
-   
-   <div class="content">
-      <!-- card -->
-      <div class="card">
-         <a href="#profile">
-            <div class="icon"><i class="material-icons md-36">portrait</i></div>
-            <p class="title">Profile</p>
-            <p class="text">About me.</p>
-         </a>
-      </div>
-      <!-- end card -->
-      <!-- card -->
-      <div class="card">
-         <a href="#projects">
-            <div class="icon"><i class="material-icons md-36">code</i></div>
-            <p class="title">Projects</p>
-            <p class="text">Check out some of my work.</p>
-         </a>
-      </div>
-      <!-- end card -->
-      <!-- card -->
-      <div class="card">
-         <a href="#contact">
-            <div class="icon"><i class="material-icons md-36">alternate_email</i></div>
-            <p class="title">Contact</p>
-            <p class="text">Get in touch.</p>
-         </a>
-      </div>
-      <!-- end card -->
-   
-   </div>
-   <br>
+    <div class="css-typing">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello there, I'm Liam!</p>
+        <p>Please scroll down to learn more...</p>
+    </div>
+
+    <div class="content">
+        <!-- card -->
+        <div class="card">
+            <a href="#profile">
+                <div class="icon"><i class="material-icons md-36">portrait</i></div>
+                <p class="title">Profile</p>
+                <p class="text">About me.</p>
+            </a>
+        </div>
+        <!-- end card -->
+        <!-- card -->
+        <div class="card">
+            <a href="#projects">
+                <div class="icon"><i class="material-icons md-36">code</i></div>
+                <p class="title">Projects</p>
+                <p class="text">Check out some of my work.</p>
+            </a>
+        </div>
+        <!-- end card -->
+        <!-- card -->
+        <div class="card">
+            <a href="#contact">
+                <div class="icon"><i class="material-icons md-36">alternate_email</i></div>
+                <p class="title">Contact</p>
+                <p class="text">Get in touch.</p>
+            </a>
+        </div>
+        <!-- end card -->
+
+    </div>
+    <br>
 </section> <!-- LaunchPad section -->
 
 <!-- Portfolio Section-->
-<section class="page-section portfolio" id="portfolio">
-   <div class="container">
-      <!-- Portfolio Section Heading-->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-      <!-- Icon Divider-->
-      <div class="divider-custom">
-         <div class="divider-custom-line"></div>
-         <div class="divider-custom-icon">***</i></div>
-         <div class="divider-custom-line"></div>
-      </div>
-      <!-- Portfolio Grid Items-->
-      <div class="row">
-         <!-- Portfolio Item 1-->
-         <div class="col-md-6 col-lg-4 mb-5">
-            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-               <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                  <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-               </div>
-               <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="" />
+<section class="page-section portfolio" id="projects">
+    <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h1 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h1>
+        
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon text-center">***</i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Portfolio Grid Items-->
+        <div class="row">
+            <!-- Portfolio Item 1-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="" />
+                </div>
             </div>
-         </div>
-         <!-- Portfolio Item 2-->
-         <div class="col-md-6 col-lg-4 mb-5">
-            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-               <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                  <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-               </div>
-               <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="" />
+            <!-- Portfolio Item 2-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="" />
+                </div>
             </div>
-         </div>
-         <!-- Portfolio Item 3-->
-         <div class="col-md-6 col-lg-4 mb-5">
-            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-               <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                  <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-               </div>
-               <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="" />
+            <!-- Portfolio Item 3-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="" />
+                </div>
             </div>
-         </div>
-         <!-- Portfolio Item 4-->
-         <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-               <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                  <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-               </div>
-               <img class="img-fluid" src="assets/img/portfolio/game.png" alt="" />
+            <!-- Portfolio Item 4-->
+            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="assets/img/portfolio/game.png" alt="" />
+                </div>
             </div>
-         </div>
-         <!-- Portfolio Item 5-->
-         <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-               <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                  <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-               </div>
-               <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="" />
+            <!-- Portfolio Item 5-->
+            <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="" />
+                </div>
             </div>
-         </div>
-         <!-- Portfolio Item 6-->
-         <div class="col-md-6 col-lg-4">
-            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-               <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                  <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-               </div>
-               <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="" />
+            <!-- Portfolio Item 6-->
+            <div class="col-md-6 col-lg-4">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="" />
+                </div>
             </div>
-         </div>
-      </div>
-   </div>
+        </div>
+    </div> <!-- container -->
 </section>
 
 
 <section id="profile">
-   <div id='sections' style="padding-top: 200px;">
-      <div class="container">
-         <div class="team-single">
-         <div class="row">
+    <div id='sections' style="padding-top: 200px;">
+        <div class="container">
+            <h1 class="headline page-section-heading text-center text-uppercase text-secondary mb-0">Profile</h1>
+            <div class="team-single">
+                <div class="row">
 
-               <div class="col-lg-4 col-md-5 xs-margin-30px-bottom">
-                  <div class="team-single-img">
-                     <img class="profile-img" src="https://media-exp1.licdn.com/dms/image/C5603AQHVdBBP-nHQ5g/profile-displayphoto-shrink_400_400/0?e=1600300800&v=beta&t=7UcGQumv_GmWneF6aT2QR9tH7KoyT4d0-hc65KzeuqY" alt="">
-                  </div>
-                  <div class="bg-light-gray padding-30px-all md-padding-25px-all sm-padding-20px-all text-center">
-                     <h4 class="font-size38 sm-font-size32 xs-font-size30">Liam Deacon</h4>
-                     <h4 class="margin-10px-bottom font-size24 md-font-size22 sm-font-size20 font-weight-600">Software Consultant</h4>
-                     <p class="sm-width-95 sm-margin-auto">I am a natural tinkerer&#44; technology enthuisiast and life-long learner! <br>I love challenges and take pride in the work that I do 🚀</p>
-                     <div class="margin-20px-top team-single-icons">
-                        <ul class="no-margin">
-                           <li><a href="https://github.com/Liam-Deacon"><i class="fab fa-github"></i></a></li>
-                           <li><a href="https://linkedin.com/in/liam-matthew-deacon"><i class="fab fa-linkedin"></i></a></li>
-                           <li><a href="https://stackoverflow.com/users/2318834/liam-deacon"><i class="fab fa-stack-overflow"></i></a></li>
-                           <li><a href="https://www.hackerrank.com/liam_m_deacon?hr_r=1"><i class="fab fa-hackerrank"></i></a></li>
-                           <li><a href="javascript:void(0)"><i class="fab fa-medium"></i></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
+                    <div class="col-lg-4 col-md-5 xs-margin-30px-bottom">
+                        <div class="team-single-img">
+                            <img class="profile-img" src="https://media-exp1.licdn.com/dms/image/C5603AQHVdBBP-nHQ5g/profile-displayphoto-shrink_400_400/0?e=1600300800&v=beta&t=7UcGQumv_GmWneF6aT2QR9tH7KoyT4d0-hc65KzeuqY" alt="">
+                        </div>
+                        <div class="bg-light-gray padding-30px-all md-padding-25px-all sm-padding-20px-all text-center">
+                            <h4 class="font-size38 sm-font-size32 xs-font-size30">Liam Deacon</h4>
+                            <h4 class="margin-10px-bottom font-size24 md-font-size22 sm-font-size20 font-weight-600">Software Consultant</h4>
+                            <p class="sm-width-95 sm-margin-auto">I am a natural tinkerer&#44; technology enthuisiast and life-long learner! <br>I love challenges and take pride in the work that I do 🚀</p>
+                            <div class="margin-20px-top team-single-icons">
+                                <ul class="no-margin">
+                                    <li><a href="https://github.com/Liam-Deacon"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="https://linkedin.com/in/liam-matthew-deacon"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="https://stackoverflow.com/users/2318834/liam-deacon"><i class="fab fa-stack-overflow"></i></a></li>
+                                    <li><a href="https://www.hackerrank.com/liam_m_deacon?hr_r=1"><i class="fab fa-hackerrank"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fab fa-medium"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
-               <div class="col-lg-8 col-md-7">
-                  <div class="team-single-text padding-50px-left sm-no-padding-left">
-                     <h4 class="margin-10px-bottom font-size24 md-font-size22 sm-font-size20 font-weight-600">About Me</h4>
-                     <p class="no-margin-bottom">I'm a versatile researcher and software engineer who enjoys working on interesting ideas and concepts. </p>
-                     <div class="contact-info-section margin-40px-tb">
-                        <ul class="list-style9 no-margin">
-                           <li>
-                              <div class="row">
-                                 <div class="col-md-5 col-5">
-                                    <i class="fas fa-graduation-cap text-orange"></i>
-                                    <strong class="margin-10px-left text-orange">Education:</strong>
-                                 </div>
-                                 <div class="col-md-7 col-7">
-                                    <p><u class="dotted_underline">PhD</u> Chemistry & <u class="dotted_underline">BSc</u> (Hons) Physics (First Class)</p>
-                                 </div>
-                              </div>
-                           </li>
-                           <li>
-                              <div class="row">
-                                 <div class="col-md-5 col-5">
-                                    <i class="far fa-gem text-yellow"></i>
-                                       <strong class="margin-10px-left text-yellow">Experience:</strong>
-                                 </div>
-                                 <div class="col-md-7 col-7">
-                                    <p>10+ Years in <u class="dotted_underline">data analysis<span>&nbsp;<i class="lni lni-stats-up"></i></span></u>, <u class="dotted_underline">programming<span> <i class="fas fa-code"></i></span></u> and <u class="dotted_underline">software engineering<span> <i class="fas fa-code-branch"></i></span></u></p>
-                                 </div>
-                              </div>
-                           </li>
-                           <li>
-                              <div class="row">
-                                 <div class="col-md-5 col-5">
-                                    <i class="fas fa-walking text-lightred"></i>
-                                    <strong class="margin-10px-left text-lightred">Hobbies:</strong>
-                                 </div>
-                                 <div class="col-md-7 col-7">
-                                    <p>Rasperry Pi & IoT <i class="fas fa-microchip"></i>,
-                                    Dogs <i class="fas fa-dog"></i>, Board Games <i class="fas fa-dice"></i>, Video Games <i class="fas fa-gamepad"></i> and Adventure <i class="fas fa-hiking"></i></p>
-                                 </div>
-                              </div>
-                           </li>
-                           <li>
-                              <div class="row">
-                                 <div class="col-md-5 col-5">
-                                    <i class="fas fa-map-marker-alt text-green"></i>
-                                    <strong class="margin-10px-left text-green">Address:</strong>
-                                 </div>
-                                 <div class="col-md-7 col-7">
-                                    <p>Hampshire, UK.</p>
-                                 </div>
-                              </div>
-                           </li>
-                           <li>
-                              <div class="row">
-                                 <div class="col-md-5 col-5">
-                                    <i class="fas fa-mobile-alt text-purple"></i>
-                                    <strong class="margin-10px-left xs-margin-four-left text-purple">Phone:</strong>
-                                 </div>
-                                 <div class="col-md-7 col-7">
-                                    <p>(+44) 123 456 789</p>
-                                 </div>
-                              </div>
-                           </li>
-                           <li>
-                              <div class="row">
-                                 <div class="col-md-5 col-5">
-                                    <i class="fas fa-envelope text-pink"></i>
-                                    <strong class="margin-10px-left xs-margin-four-left text-pink">Email:</strong>
-                                 </div>
-                                 <div class="col-md-7 col-7">
-                                    <p><a href="javascript:void(0)">liam.deacon@lightbytestechnology.co.uk</a></p>
-                                 </div>
-                              </div>
-                           </li>
-                        </ul>
-                     </div>
+                    <div class="col-lg-8 col-md-7">
+                        <div class="team-single-text padding-50px-left sm-no-padding-left">
+                            <br>
+                            <h4 class="margin-10px-bottom font-size24 md-font-size22 sm-font-size20 font-weight-600">About Me</h4>
+                            <p class="no-margin-bottom">I'm a versatile researcher and software engineer who enjoys working on interesting ideas and concepts. </p>
+                            <div class="contact-info-section margin-40px-tb">
+                                <ul class="list-style9 no-margin">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-5 col-5">
+                                                <i class="fas fa-graduation-cap text-orange"></i>
+                                                <strong class="margin-10px-left text-orange">Education:</strong>
+                                            </div>
+                                            <div class="col-md-7 col-7">
+                                                <p><u class="dotted_underline">PhD</u> Chemistry & <u class="dotted_underline">BSc</u> (Hons) Physics (First Class)</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-5 col-5">
+                                                <i class="far fa-gem text-yellow"></i>
+                                                <strong class="margin-10px-left text-yellow">Experience:</strong>
+                                            </div>
+                                            <div class="col-md-7 col-7">
+                                                <p>10+ Years in <u class="dotted_underline">data analysis<span>&nbsp;<i class="lni lni-stats-up"></i></span></u>, <u class="dotted_underline">programming<span> <i class="fas fa-code"></i></span></u> and <u class="dotted_underline">software engineering<span> <i class="fas fa-code-branch"></i></span></u></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-5 col-5">
+                                                <i class="fas fa-walking text-lightred"></i>
+                                                <strong class="margin-10px-left text-lightred">Hobbies:</strong>
+                                            </div>
+                                            <div class="col-md-7 col-7">
+                                                <p>Rasperry Pi & IoT <i class="fas fa-microchip"></i>,
+                                                    Dogs <i class="fas fa-dog"></i>, Board Games <i class="fas fa-dice"></i>, Video Games <i class="fas fa-gamepad"></i> and Adventure <i class="fas fa-hiking"></i></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-5 col-5">
+                                                <i class="fas fa-map-marker-alt text-green"></i>
+                                                <strong class="margin-10px-left text-green">Address:</strong>
+                                            </div>
+                                            <div class="col-md-7 col-7">
+                                                <p>Hampshire, UK.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-5 col-5">
+                                                <i class="fas fa-mobile-alt text-purple"></i>
+                                                <strong class="margin-10px-left xs-margin-four-left text-purple">Phone:</strong>
+                                            </div>
+                                            <div class="col-md-7 col-7">
+                                                <p>(+44) 123 456 789</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-md-5 col-5">
+                                                <i class="fas fa-envelope text-pink"></i>
+                                                <strong class="margin-10px-left xs-margin-four-left text-pink">Email:</strong>
+                                            </div>
+                                            <div class="col-md-7 col-7">
+                                                <p><a href="mailto://liam.deacon@lightbytestechnology.co.uk">liam.deacon@lightbytestechnology.co.uk</a></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
 
-                     <div style="padding-bottom: 10px;" id="skills">
-                        <h5 class="font-size24 sm-font-size22 xs-font-size20">Professional Skills & Experience <input type="text" class="fuzzy-search" placeholder="Filter Skills"></h5>
-                        <ul class="list">
-                           <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Team Working</b>" data-content="<a href='https://www.flaticon.com/free-icon/user_3014153' title='Image made by Freepik on flaticon.com'><img src='https://image.flaticon.com/icons/svg/3014/3014153.svg' class='popup-image'/></a>I've worked in multi-disciplinary teams ranging from 3 to 9 people, and have acted as a technical lead for some projects. I will always spend time to assist more junior members and will leverage my development experience to assist in project decision making.">Team Working</button></li>
-                           <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Communication</b>" data-content="<a href='https://www.flaticon.com/free-icon/group_745205' title='Image made by Freepik on flaticon.com'><img src='https://image.flaticon.com/icons/svg/745/745205.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">Communication</button></li>
-                           <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Scrum Experience</b>" data-content="<a href='https://www.flaticon.com/free-icon/agile_2784065?term=agility&page=1&position=24' title='Image made by Freepik on flaticon.com'><img src='https://image.flaticon.com/icons/svg/2784/2784065.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">Agile Methodologies</button></li>
-                           <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Scrum Experience</b>" data-content="<a href='https://www.flaticon.com/free-icon/agile_2649708' title='Image made by Eucalyp on flaticon.com'><img src='https://image.flaticon.com/icons/svg/2649/2649708.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">Scrum</button></li>
-                           <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Kanban</b>" data-content="<a href='https://www.flaticon.com/free-icon/stack_1147091' title='Image made by Freepik on flaticon.com'><img src='https://image.flaticon.com/icons/svg/1147/1147091.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">Kanban</button></li>
-                           <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>CI/CD Experience</b>" data-content="<a href='https://www.flaticon.com/free-icon/mechanism_2612518' title='Image by Phatplus on flaticon.com'><img src='https://image.flaticon.com/icons/svg/2612/2612518.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">CI/CD</button></li>
-                           <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>DevOps</b>" data-content="<a href='https://www.flaticon.com/free-icon/infinity_2819153?term=infinity&page=1&position=55' title='Image by Vitaly Gorbachevat flaticon.com'><img src='https://image.flaticon.com/icons/svg/2819/2819153.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">DevOps</button></li>
-                           <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Scrum Experience</b>" data-content="<img src='https://image.flaticon.com/icons/svg/2649/2649708.svg' class='popup-image'/>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">Responsive</button></li>
-                           <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>URL Experience</b>" data-content="<a href='https://www.flaticon.com/free-icon/database_1508840' title='Image by mynamepong at flaticon.com'><img src='https://image.flaticon.com/icons/svg/1508/1508840.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">UML</button></li>
-                           <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Scrum Experience</b>" data-content="<img src='https://image.flaticon.com/icons/svg/2649/2649708.svg' class='popup-image'/>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">GDPR</button></li>
-                           <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Scrum Experience</b>" data-content="<img src='https://image.flaticon.com/icons/svg/2649/2649708.svg' class='popup-image'/>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">Stuff</button></li>
-                           <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Data Engineering Experience</b>" data-content="<a href='https://www.flaticon.com/free-icon/engineer_2286696?term=data%20engineer&page=1&position=1' title='Image by wanicon on flaticon.com'><img src='https://image.flaticon.com/icons/svg/2286/2286696.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">Data Engineering</button></li>
-                           <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Data ETL Experience</b>" data-content="<a href='https://www.flaticon.com/free-icon/system_2286729' title='Image by wanicon on flaticon.com'><img src='https://image.flaticon.com/icons/svg/2286/2286729.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">Data ETL</button></li>
-                           <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Exploratory Data Analysis Experience</b>" data-content="<a href='https://www.flaticon.com/free-icon/monitor_2782163' title='Image by xnimrodx at flaticon.com'><img src='https://image.flaticon.com/icons/svg/2782/2782163.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">(Exploratory) Data Analysis</button></li>
-                           <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Dashboards Experience</b>" data-content="<a href='https://www.flaticon.com/free-icon/data_2782187' title='Image by xnimrodx on flaticon.com'><img src='https://image.flaticon.com/icons/svg/2782/2782187.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">Data Dashboards</button></li>
-                           <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Reporting Experience</b>" data-content="<a href='https://www.flaticon.com/free-icon/presentation_3079029' title='Image by Becris on flaticon.com'><img src='https://image.flaticon.com/icons/svg/3079/3079029.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">Business Reporting</button></li>
-                        <br>
-                        </ul>
-                     </div>
-                  </div>
-               </div> <!-- Should this be here? -->
-               <div class="col-md-12">
-                  <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="Python Skill Level<br><b>Pythonista Ninja</b><br><img src='https://image.flaticon.com/icons/svg/1297/1297525.svg' class='lang-pic-tooltip'/>">
-                     <div class="lang-pic-box">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" class="fa-stack-2x"/>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:70%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:95%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:114%"></i>
-                        <br><p class="lang-text">Python&nbsp;</p>
-                     </div>
-                  </span>
-                  <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="HTML5 Skill Level<br><b>Code Warrior</b><br><img src='https://image.flaticon.com/icons/svg/2332/2332589.svg' class='lang-pic-tooltip'/>">
-                     <div class="lang-pic-box">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" class="fa-stack-2x" style="left: -5px"/>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:70%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:95%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:114%; color: white; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: gray; text-shadow: 0 0 8px gray;"></i>
-                        <br><p class="lang-text">HTML5&nbsp;&nbsp;</p>
-                     </div>
-                  </span>
-                  <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="CSS Skill Level:<br><b>Developer</b><br><img src='https://image.flaticon.com/icons/svg/1803/1803671.svg' class='lang-pic-tooltip'/>">
-                     <div class="lang-pic-box">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" class="fa-stack-2x" style="left: 5px; width: 50px"/>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:70%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:95%; color: white; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: gray; text-shadow: 0 0 8px gray;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:114%; color: white; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: gray; text-shadow: 0 0 8px gray;"></i>
-                        <br><p class="lang-text">CSS3&nbsp;&nbsp;</p>
-                     </div>
-                  </span>
-                  <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="Javascript Skill Level<br><b>Ninja</b><br><img src='https://image.flaticon.com/icons/svg/1303/1303427.svg' class='lang-pic-tooltip'/>">
-                     <div class="lang-pic-box">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg" class="fa-stack-2x" style="left: 5px; width: 50px"/>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:70%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:95%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:114%; color: white; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: gray; text-shadow: 0 0 8px gray;"></i>
-                        <br><p class="lang-text">JavaScript&nbsp;&nbsp;</p>
-                     </div>
-                  </span>
-                  <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="C Skill Level<br><b>Ninja</b><br><img src='https://image.flaticon.com/icons/svg/1303/1303427.svg' class='lang-pic-tooltip'/>">
-                     <div class="lang-pic-box">
-                        <img src="https://seeklogo.com/images/C/c-logo-672525892C-seeklogo.com.png" class="fa-stack-2x" style="left: 5px; width: 60px"/>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:70%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:95%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:114%; color: white; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: gray; text-shadow: 0 0 8px gray;"></i>
-                        <br><p class="lang-text">C&nbsp;&nbsp;</p>
-                     </div>
-                  </span>
-                  <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="C Skill Level<br><b>Ninja</b><br><img src='https://image.flaticon.com/icons/svg/1303/1303427.svg' class='lang-pic-tooltip'/>">
-                     <div class="lang-pic-box">
-                        <img src="https://seeklogo.com/images/C/c-logo-43CE78FF9C-seeklogo.com.png" class="fa-stack-2x" style="left: 5px; width: 60px"/>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:70%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:95%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:114%; color: white; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: gray; text-shadow: 0 0 8px gray;"></i>
-                        <br><p class="lang-text">C++&nbsp;</p>
-                     </div>
-                  </span>
-                  <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="C Skill Level<br><b>Ninja</b><br><img src='https://image.flaticon.com/icons/svg/1303/1303427.svg' class='lang-pic-tooltip'/>">
-                     <div class="lang-pic-box">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Fortran.png" class="fa-stack-2x" style="left: 5px; width: 60px"/>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
-                        <i class="no-fill-star fa fa-star fa-stack-1x fa-sm " style="padding-left:70%;"></i>
-                        <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:95%"></i>
-                        <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:114%;"></i>
-                        <br><p class="lang-text">Fortran&nbsp;</p>
-                     </div>
-                  </span>
-                  <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="SQL Skill Level<br><b>Ninja</b><br><img src='https://image.flaticon.com/icons/svg/1303/1303427.svg' class='lang-pic-tooltip'/>">
-                     <div class="lang-pic-box">
-                        <i class="fi fi-database fa-stack-2x sql-icon" style="left: 5px; width: 60px;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:70%;"></i>
-                        <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:95%"></i>
-                        <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:114%;"></i>
-                        <br><p class="lang-text">SQL&nbsp;&nbsp;</p>
-                     </div>
-                  </span>
-                  <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="C Skill Level<br><b>Ninja</b><br><img src='https://upload.wikimedia.org/wikipedia/commons/7/7a/C_Sharp_logo.svg' class='lang-pic-tooltip'/>">
-                     <div class="lang-pic-box">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/C_Sharp_logo.svg" class="fa-stack-2x" style="left: 5px; width: 60px"/>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:70%;"></i>
-                        <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:95%;"></i>
-                        <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:114%;"></i>
-                        <br><p class="lang-text">C#&nbsp;</p>
-                     </div>
-                  </span>
-                  <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="Java Skill Level<br><b>Ninja</b><br><img src='https://image.flaticon.com/icons/svg/1303/1303427.svg' class='lang-pic-tooltip'/>">
-                     <div class="lang-pic-box">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" class="fa-stack-2x" style="left: 10px; width: 40px"/>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:70%;"></i>
-                        <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:95%;"></i>
-                        <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:114%;"></i>
-                        <br><p class="lang-text">Java&nbsp;&nbsp;&nbsp;</p>
-                     </div>
-                  </span>
-                  <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="VB Skill Level<br><b>Out of practice</b><br><img src='https://image.flaticon.com/icons/svg/3159/3159079.svg' class='lang-pic-tooltip'/>">
-                     <div class="lang-pic-box">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/VB.NET_Logo.svg" class="fa-stack-2x" style="left: 0px; top: 5px; width: 60px"/>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
-                        <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:70%;"></i>
-                        <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:95%;"></i>
-                     <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:114%;"></i>
-                        <br><p class="lang-text">VB.NET&nbsp;</p>
-                     </div>
-                  </span>
-                  <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="Rust Skill Level<br><b>Learning</b><br><img src='https://image.flaticon.com/icons/svg/201/201612.svg' class='lang-pic-tooltip'/>">
-                     <div class="lang-pic-box">
-                        <img src="https://www.rust-lang.org/logos/rust-logo-256x256.png" class="fa-stack-2x" style="left: -5px;"/>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:70%; color: white; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: gray; text-shadow: 0 0 8px gray"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:95%; color: white; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: gray; text-shadow: 0 0 8px gray"></i>
-                        <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:114%; color: white; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: gray; text-shadow: 0 0 8px gray;"></i>
-                        <br><p class="lang-text">Rust&nbsp;&nbsp;</p>
-                     </div>
-                  </span>
-               </div>
+                            <div style="padding-bottom: 10px;" id="skills">
+                                <div class="row">
+                                    <div class="col-md-7 col-7">
+                                        <h5 class="font-size24 sm-font-size22 xs-font-size20">Professional Skills & Experience</h5>
+                                    </div>
+                                    <div class="col-md-5 col-5">
+                                        <input type="text" class="fuzzy-search" placeholder="Filter Skills">
+                                    </div>
+                                </div>
+                                <ul class="list">
+                                    <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Team Working</b>" data-content="<a href='https://www.flaticon.com/free-icon/user_3014153' title='Image made by Freepik on flaticon.com'><img src='https://image.flaticon.com/icons/svg/3014/3014153.svg' class='popup-image'/></a>I've worked in multi-disciplinary teams ranging from 3 to 9 people, and have acted as a technical lead for some projects. I will always spend time to assist more junior members and will leverage my development experience to assist in project decision making.">Team Working</button></li>
+                                    <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Communication</b>" data-content="<a href='https://www.flaticon.com/free-icon/group_745205' title='Image made by Freepik on flaticon.com'><img src='https://image.flaticon.com/icons/svg/745/745205.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">Communication</button></li>
+                                    <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Scrum Experience</b>" data-content="<a href='https://www.flaticon.com/free-icon/agile_2784065?term=agility&page=1&position=24' title='Image made by Freepik on flaticon.com'><img src='https://image.flaticon.com/icons/svg/2784/2784065.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">Agile Methodologies</button></li>
+                                    <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Scrum Experience</b>" data-content="<a href='https://www.flaticon.com/free-icon/agile_2649708' title='Image made by Eucalyp on flaticon.com'><img src='https://image.flaticon.com/icons/svg/2649/2649708.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">Scrum</button></li>
+                                    <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Kanban</b>" data-content="<a href='https://www.flaticon.com/free-icon/stack_1147091' title='Image made by Freepik on flaticon.com'><img src='https://image.flaticon.com/icons/svg/1147/1147091.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">Kanban</button></li>
+                                    <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>CI/CD Experience</b>" data-content="<a href='https://www.flaticon.com/free-icon/mechanism_2612518' title='Image by Phatplus on flaticon.com'><img src='https://image.flaticon.com/icons/svg/2612/2612518.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">CI/CD</button></li>
+                                    <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>DevOps</b>" data-content="<a href='https://www.flaticon.com/free-icon/infinity_2819153?term=infinity&page=1&position=55' title='Image by Vitaly Gorbachevat flaticon.com'><img src='https://image.flaticon.com/icons/svg/2819/2819153.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">DevOps</button></li>
+                                    <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Scrum Experience</b>" data-content="<img src='https://image.flaticon.com/icons/svg/2649/2649708.svg' class='popup-image'/>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">Responsive</button></li>
+                                    <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>URL Experience</b>" data-content="<a href='https://www.flaticon.com/free-icon/database_1508840' title='Image by mynamepong at flaticon.com'><img src='https://image.flaticon.com/icons/svg/1508/1508840.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">UML</button></li>
+                                    <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Scrum Experience</b>" data-content="<img src='https://image.flaticon.com/icons/svg/2649/2649708.svg' class='popup-image'/>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">GDPR</button></li>
+                                    <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Scrum Experience</b>" data-content="<img src='https://image.flaticon.com/icons/svg/2649/2649708.svg' class='popup-image'/>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">Stuff</button></li>
+                                    <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Data Engineering Experience</b>" data-content="<a href='https://www.flaticon.com/free-icon/engineer_2286696?term=data%20engineer&page=1&position=1' title='Image by wanicon on flaticon.com'><img src='https://image.flaticon.com/icons/svg/2286/2286696.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">Data Engineering</button></li>
+                                    <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Data ETL Experience</b>" data-content="<a href='https://www.flaticon.com/free-icon/system_2286729' title='Image by wanicon on flaticon.com'><img src='https://image.flaticon.com/icons/svg/2286/2286729.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">Data ETL</button></li>
+                                    <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Exploratory Data Analysis Experience</b>" data-content="<a href='https://www.flaticon.com/free-icon/monitor_2782163' title='Image by xnimrodx at flaticon.com'><img src='https://image.flaticon.com/icons/svg/2782/2782163.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">(Exploratory) Data Analysis</button></li>
+                                    <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Dashboards Experience</b>" data-content="<a href='https://www.flaticon.com/free-icon/data_2782187' title='Image by xnimrodx on flaticon.com'><img src='https://image.flaticon.com/icons/svg/2782/2782187.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">Data Dashboards</button></li>
+                                    <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>Reporting Experience</b>" data-content="<a href='https://www.flaticon.com/free-icon/presentation_3079029' title='Image by Becris on flaticon.com'><img src='https://image.flaticon.com/icons/svg/3079/3079029.svg' class='popup-image'/></a>I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary.">Business Reporting</button></li>
+                                    <br>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- Should this be here? -->
+                    <div class="col-md-12">
+                        <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="Python Skill Level<br><b>Pythonista Ninja</b><br><img src='https://image.flaticon.com/icons/svg/1297/1297525.svg' class='lang-pic-tooltip'/>">
+                            <div class="lang-pic-box">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" class="fa-stack-2x" />
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:70%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:95%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:114%"></i>
+                                <br>
+                                <p class="lang-text">Python&nbsp;</p>
+                            </div>
+                        </span>
+                        <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="HTML5 Skill Level<br><b>Code Warrior</b><br><img src='https://image.flaticon.com/icons/svg/2332/2332589.svg' class='lang-pic-tooltip'/>">
+                            <div class="lang-pic-box">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" class="fa-stack-2x" style="left: -5px" />
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:70%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:95%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:114%; color: white; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: gray; text-shadow: 0 0 8px gray;"></i>
+                                <br>
+                                <p class="lang-text">HTML5&nbsp;&nbsp;</p>
+                            </div>
+                        </span>
+                        <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="CSS Skill Level:<br><b>Developer</b><br><img src='https://image.flaticon.com/icons/svg/1803/1803671.svg' class='lang-pic-tooltip'/>">
+                            <div class="lang-pic-box">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" class="fa-stack-2x" style="left: 5px; width: 50px" />
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:70%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:95%; color: white; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: gray; text-shadow: 0 0 8px gray;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:114%; color: white; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: gray; text-shadow: 0 0 8px gray;"></i>
+                                <br>
+                                <p class="lang-text">CSS3&nbsp;&nbsp;</p>
+                            </div>
+                        </span>
+                        <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="Javascript Skill Level<br><b>Ninja</b><br><img src='https://image.flaticon.com/icons/svg/1303/1303427.svg' class='lang-pic-tooltip'/>">
+                            <div class="lang-pic-box">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg" class="fa-stack-2x" style="left: 5px; width: 50px" />
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:70%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:95%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:114%; color: white; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: gray; text-shadow: 0 0 8px gray;"></i>
+                                <br>
+                                <p class="lang-text">JavaScript&nbsp;&nbsp;</p>
+                            </div>
+                        </span>
+                        <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="C Skill Level<br><b>Ninja</b><br><img src='https://image.flaticon.com/icons/svg/1303/1303427.svg' class='lang-pic-tooltip'/>">
+                            <div class="lang-pic-box">
+                                <img src="https://seeklogo.com/images/C/c-logo-672525892C-seeklogo.com.png" class="fa-stack-2x" style="left: 5px; width: 60px" />
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:70%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:95%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:114%; color: white; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: gray; text-shadow: 0 0 8px gray;"></i>
+                                <br>
+                                <p class="lang-text">C&nbsp;&nbsp;</p>
+                            </div>
+                        </span>
+                        <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="C Skill Level<br><b>Ninja</b><br><img src='https://image.flaticon.com/icons/svg/1303/1303427.svg' class='lang-pic-tooltip'/>">
+                            <div class="lang-pic-box">
+                                <img src="https://seeklogo.com/images/C/c-logo-43CE78FF9C-seeklogo.com.png" class="fa-stack-2x" style="left: 5px; width: 60px" />
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:70%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:95%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:114%; color: white; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: gray; text-shadow: 0 0 8px gray;"></i>
+                                <br>
+                                <p class="lang-text">C++&nbsp;</p>
+                            </div>
+                        </span>
+                        <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="C Skill Level<br><b>Ninja</b><br><img src='https://image.flaticon.com/icons/svg/1303/1303427.svg' class='lang-pic-tooltip'/>">
+                            <div class="lang-pic-box">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Fortran.png" class="fa-stack-2x" style="left: 5px; width: 60px" />
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
+                                <i class="no-fill-star fa fa-star fa-stack-1x fa-sm " style="padding-left:70%;"></i>
+                                <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:95%"></i>
+                                <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:114%;"></i>
+                                <br>
+                                <p class="lang-text">Fortran&nbsp;</p>
+                            </div>
+                        </span>
+                        <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="SQL Skill Level<br><b>Ninja</b><br><img src='https://image.flaticon.com/icons/svg/1303/1303427.svg' class='lang-pic-tooltip'/>">
+                            <div class="lang-pic-box">
+                                <i class="fi fi-database fa-stack-2x sql-icon" style="left: 5px; width: 60px;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:70%;"></i>
+                                <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:95%"></i>
+                                <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:114%;"></i>
+                                <br>
+                                <p class="lang-text">SQL&nbsp;&nbsp;</p>
+                            </div>
+                        </span>
+                        <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="C Skill Level<br><b>Ninja</b><br><img src='https://upload.wikimedia.org/wikipedia/commons/7/7a/C_Sharp_logo.svg' class='lang-pic-tooltip'/>">
+                            <div class="lang-pic-box">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/C_Sharp_logo.svg" class="fa-stack-2x" style="left: 5px; width: 60px" />
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:70%;"></i>
+                                <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:95%;"></i>
+                                <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:114%;"></i>
+                                <br>
+                                <p class="lang-text">C#&nbsp;</p>
+                            </div>
+                        </span>
+                        <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="Java Skill Level<br><b>Ninja</b><br><img src='https://image.flaticon.com/icons/svg/1303/1303427.svg' class='lang-pic-tooltip'/>">
+                            <div class="lang-pic-box">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" class="fa-stack-2x" style="left: 10px; width: 40px" />
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:70%;"></i>
+                                <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:95%;"></i>
+                                <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:114%;"></i>
+                                <br>
+                                <p class="lang-text">Java&nbsp;&nbsp;&nbsp;</p>
+                            </div>
+                        </span>
+                        <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="VB Skill Level<br><b>Out of practice</b><br><img src='https://image.flaticon.com/icons/svg/3159/3159079.svg' class='lang-pic-tooltip'/>">
+                            <div class="lang-pic-box">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/VB.NET_Logo.svg" class="fa-stack-2x" style="left: 0px; top: 5px; width: 60px" />
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
+                                <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:70%;"></i>
+                                <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:95%;"></i>
+                                <i class="no-fill-star fa fa-star fa-stack-1x fa-sm" style="padding-left:114%;"></i>
+                                <br>
+                                <p class="lang-text">VB.NET&nbsp;</p>
+                            </div>
+                        </span>
+                        <span class="fa-stack fa-2x lang-pic" data-toggle="tooltip" data-placement="right" data-html="true" title="Rust Skill Level<br><b>Learning</b><br><img src='https://image.flaticon.com/icons/svg/201/201612.svg' class='lang-pic-tooltip'/>">
+                            <div class="lang-pic-box">
+                                <img src="https://www.rust-lang.org/logos/rust-logo-256x256.png" class="fa-stack-2x" style="left: -5px;" />
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:0%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:35%;"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:70%; color: white; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: gray; text-shadow: 0 0 8px gray"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:95%; color: white; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: gray; text-shadow: 0 0 8px gray"></i>
+                                <i class="fa fa-star fa-stack-1x fa-sm" style="padding-left:114%; color: white; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: gray; text-shadow: 0 0 8px gray;"></i>
+                                <br>
+                                <p class="lang-text">Rust&nbsp;&nbsp;</p>
+                            </div>
+                        </span>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-   </div>
+        </div>
+    </div>
 </section>
 
 <section>
-   <div id="contact">
-      <div class="container contact-form">
+    <div id="contact">
+        <div class="container contact-form">
             <div class="contact-image">
-                <img src="https://www.svgrepo.com/show/112907/speech-bubbles.svg" alt=""/>
+                <img src="https://www.svgrepo.com/show/112907/speech-bubbles.svg" alt="" />
             </div>
             <form method="post">
-               <h3>Drop me a line</h3>
-               <div class="team-single-icons-alt">
+                <h3>Drop me a line</h3>
+                <div class="team-single-icons-alt">
                     <ul class="no-margin" style="padding-left: 28%">
-                       <li><a href="tel://+44"><i class="fas fa-mobile-alt"></i></a></li>
-                       <li><a href="https://linkedin.com/in/liam-matthew-deacon"><i class="fab fa-linkedin"></i></a></li>
-                       <li><a href="mailto://liam.deacon@lightbytestechnology.co.uk"><i class="fas fa-envelope"></i></a></li>
-                       <li><a href="https://api.whatsapp.com/send?phone=27768483016&text=Hi%20Liam"><i class="fab fa-whatsapp"></i></a></li>
-                       <li><a href="https://join.skype.com/invite/aChf1z3WHJuV"><i class="fab fa-skype"></i></a></li>
-                   </ul>
-               </div>
-               <div class="row">
+                        <li><a href="tel://+44"><i class="fas fa-mobile-alt"></i></a></li>
+                        <li><a href="https://linkedin.com/in/liam-matthew-deacon"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="mailto://liam.deacon@lightbytestechnology.co.uk"><i class="fas fa-envelope"></i></a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=27768483016&text=Hi%20Liam"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://join.skype.com/invite/aChf1z3WHJuV"><i class="fab fa-skype"></i></a></li>
+                    </ul>
+                </div>
+                <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
                             <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
@@ -466,130 +536,163 @@
                             <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
                         </div>
                     </div>
-                  <div class="col-md-6">
-                     <div class="form-group">
-                        <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
-                     </div>
-                  </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                        </div>
+                    </div>
                 </div>
             </form>
-         </div>
-   </div>
+        </div>
+    </div>
 </section> <!-- sections -->
-   
+
 <footer>
-   <b>Copyright &copy; 2020 Liam Deacon</b> | Some rights reserved | <u onclick="$('#termsOfUseModal').modal('show');">Terms of Use</u> | <u onclick="$('#acknowledgementsModal').modal('show');">Acknowledgements</u>
+
+    <div class="container container-fluid">
+        <h3>Companies I have worked with</h3>
+        <!-- <div class="row"> -->
+            <!-- <div class="col"> -->
+                <img src="https://www.diamond.ac.uk/dam/jcr:065263ac-e27e-4ed1-b6fe-4cfdf71d8fe6/dls_logo.2020-02-21-14-12-04.png"/>
+            <!-- </div> -->
+            <!-- <div class="col"> -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Reading_shield.png"/>
+                <!-- <img src="https://www.intrac.org/wpcms/wp-content/uploads/2016/09/University-of-Reading-Logo.png"/> -->
+                <!-- </div> -->
+            <!-- <div class="col"> -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/HP_logo_2012.svg"/>
+            <!-- </div> -->
+            <!-- <div class="col"> -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Hewlett_Packard_Enterprise_logo.svg"/>
+            <!-- </div> -->
+            <!-- <div class="col"> -->
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/4c/NATS_logo.svg"/>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Alan_Turing_Institute_logo.svg"/>
+            <!-- </div> -->
+        <!-- </div> -->
+        <br>
+        <br>
+        <hr>
+        <span style="font-size: larger">If you 💖 this page, then please leave a star at <a href="https://github.com/liam-deacon/liam-deacon/github.io"><i class="fi fi-github"></i></a></span>
+    </div>
+    <b>Copyright &copy; 2020 Liam Deacon</b> | Some rights reserved | <u onclick="$('#termsOfUseModal').modal('show');">Terms of Use</u> | <u onclick="$('#acknowledgementsModal').modal('show');">Acknowledgements</u>
 </footer>
 
 <!-- Load scripts last for performance reasons -->
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> 
-
 <!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
 <script type="application/javascript" src="https://cdn.jsdelivr.net/npm/jquery-animated-headlines@1.0.0/dist/js/jquery.animatedheadline.js"></script>
 
-<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<script type="application/javascript" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js" crossorigin="anonymous"></script>
 
 <!-- Font Awesome Kit -->
 <script src="https://kit.fontawesome.com/38017f4133.js" crossorigin="anonymous"></script>
 
 <!-- List.js fuzzy search -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 
+<!-- Animate On Scroll Library -->
+<script src="https://cdn.jsdelivr.net/npm/aos@1.2.0/dist/aos.js"></script>
 <script>
-window.addEventListener('load', (event) => {
-  let matches = document.getElementsByClassName('ah-words-wrapper');
-  if (matches !== undefined) {
+    window.addEventListener('load', (event) => {
+    let matches = document.getElementsByClassName('ah-words-wrapper');
+    if (matches !== undefined) {
     matches[0].style.hidden = false;
-  }
-   
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  });
-   
-  $(function () {
-    $('[data-toggle="popover"]').popover()
-  });
-   
-   var skillsList = new List('skills', { 
-      valueNames: ['skill-tag']
-   });
+    }
 
-   // init animated headline
-   $(function() {
-      $('.selector').animatedHeadline({
-         animationType: 'type'
-      });
-   })
-});
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    });
+
+    var skillsList = new List('skills', {
+    valueNames: ['skill-tag']
+    });
+
+    // init animated headline
+    $(function() {
+    $('.selector').animatedHeadline({
+    animationType: 'type'
+    });
+    })
+
+    // init aos library
+    AOS.init();
+    });
 </script>
-   
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+<script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" crossorigin="anonymous"></script>
+
+<script src="/js/app.js"></script>
 
 <!-- Terms of Use Modal -->
 <div class="modal fade" id="termsOfUseModal" tabindex="-1" role="dialog" aria-labelledby="termsOfUseModalTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="termsOfUseModalLongTitle">Terms Of Use</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-         The content within this site has taken time and effort to produce...
-         As such, I would kindly ask that you acknowledge my name and this site
-         when nabbing code snippets 😉. 
-         <br>
-         <br>
-         Better yet, if you could let me know
-         this site has been useful via <a href="mailto://liam.deacon@lightbytestechnology.co.uk"><i class="fas fa-envelope"></i>&nbsp;email</a> or (ideally) on the feedback area of the <a href="https://github.com/Liam-Deacon/Liam-Deacon.github.io/labels/Feedback"><i class="fab fa-github"></i>&nbsp;GitHub repo</a>. 
-         <br><br>
-         Thanks & hope you enjoyed the site 😃
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="termsOfUseModalLongTitle">Terms Of Use</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                The content within this site has taken time and effort to produce...
+                As such, I would kindly ask that you acknowledge my name and this site
+                when nabbing code snippets 😉.
+                <br>
+                <br>
+                Better yet, if you could let me know
+                this site has been useful via <a href="mailto://liam.deacon@lightbytestechnology.co.uk"><i class="fas fa-envelope"></i>&nbsp;email</a> or (ideally) on the feedback area of the <a href="https://github.com/Liam-Deacon/Liam-Deacon.github.io/labels/Feedback"><i class="fab fa-github"></i>&nbsp;GitHub repo</a>.
+                <br><br>
+                Thanks & hope you enjoyed the site 😃
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
-   
+
 <!-- Terms of Use Modal -->
 <div class="modal fade" id="acknowledgementsModal" tabindex="-1" role="dialog" aria-labelledby="acknowledgementsModalTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="acknowledgementsModalLongTitle">Acknowledgements</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-         Many thanks to the many great developers who have produced top-notch libraries, released useful code snippets and posted about the caveats/pitfalls/gotchas, without whom this website would have taken ten times as long, been
-         a lot worse looking and frustrated me to the point of quitting!
-         <br>
-         <br>
-         Specifically, a special thanks to:
-         <ul>
-            <li><a href="https://getbootstrap.com/">The Bootstrap devs</a></li>
-            <li><a href="https://codepen.io/">The many authors of CodePen</a></li>
-            <li><a href="https://fontawesome.com/icons">Font Awesome</a>, <a href="https://fontisto.com/icons">Fontisto</a>, <a href="https://lineicons.com/icons/">LineIcons</a>, <a href="https://ionicons.com/">IonIcons</a> &amp; <a href="https://material.io/resources/icons/">Material Icons</a></li>
-         </ul>
-         <br>
-         As well as the many devs toiling behind the scenes 👍
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="acknowledgementsModalLongTitle">Acknowledgements</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Many thanks to the many great developers who have produced top-notch libraries, released useful code snippets and posted about the caveats/pitfalls/gotchas, without whom this website would have taken ten times as long, been
+                a lot worse looking and frustrated me to the point of quitting!
+                <br>
+                <br>
+                Specifically, a special thanks to:
+                <ul>
+                    <li><a href="https://getbootstrap.com/">The Bootstrap devs</a></li>
+                    <li><a href="https://codepen.io/">The many authors of CodePen</a></li>
+                    <li><a href="https://fontawesome.com/icons">Font Awesome</a>, <a href="https://fontisto.com/icons">Fontisto</a>, <a href="https://lineicons.com/icons/">LineIcons</a>, <a href="https://ionicons.com/">IonIcons</a> &amp; <a href="https://material.io/resources/icons/">Material Icons</a></li>
+                </ul>
+                <br>
+                As well as the many devs toiling behind the scenes 👍
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
+</body>
+</html>
