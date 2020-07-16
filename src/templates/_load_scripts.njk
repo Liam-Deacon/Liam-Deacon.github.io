@@ -1,0 +1,63 @@
+<!-- Load scripts last for performance reasons -->
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+<!-- Latest compiled Bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- Modernizr is needed for animated headlines -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/npm/jquery-animated-headlines@1.0.0/dist/js/jquery.animatedheadline.js"></script>
+
+<!-- Load IonIcons -->
+<script type="application/javascript" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js" crossorigin="anonymous"></script>
+
+<!-- Font Awesome Kit -->
+<script src="https://kit.fontawesome.com/38017f4133.js" crossorigin="anonymous"></script>
+
+<!-- List.js fuzzy search -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+<!-- Animate On Scroll Library -->
+<script src="https://cdn.jsdelivr.net/npm/aos@1.2.0/dist/aos.js"></script>
+
+<!-- Do the following actions on document load event -->
+<script>
+    window.addEventListener('load', (event) => {
+        let matches = document.getElementsByClassName('ah-words-wrapper');
+        if (matches !== undefined) {
+            matches[0].style.hidden = false;
+        }
+
+        // enable Bootstrap tooltips
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+
+        // enable Bootstrap popovers
+        $(function() {
+            $('[data-toggle="popover"]').popover()
+        });
+
+        var skillsList = new List('skills', {
+            valueNames: ['skill-tag']
+        });
+
+        // init animated headline
+        $(function() {
+            $('.selector').animatedHeadline({
+                animationType: 'type'
+            });
+        })
+
+        // init aos library
+        AOS.init();
+    });
+</script>
+
+<script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" crossorigin="anonymous"></script>
+
+<script src="/js/app.js"></script>

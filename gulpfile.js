@@ -1,3 +1,4 @@
+const fs = require('fs');
 const http = require('http');
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
@@ -18,8 +19,6 @@ const ecstatic = require('ecstatic');
 const imagemin = require('gulp-imagemin');
 const browserify = require('gulp-browserify');
 const nunjucksRender = require('gulp-nunjucks-render');
-const data = require('gulp-data');
-// const buffer = require("vinyl-buffer");
 
 const livereloadport = 35729, serverport = 9999;
 
@@ -121,15 +120,19 @@ gulp.task('stream', () =>
 );
 
 function renderTemplates() {
-  // Gets .html and .nunjucks files in pages
-  return gulp.src('src/**/*.+(html|nunjucks|njk)')
+  // Gets nunjucks files in pages
+  return gulp.src('src/[a-zA-Z]*.+(nunjucks|njk|tpl)')
   // Renders template with nunjucks
-  .pipe(data(() => { require('./src/data.json') }))
+  // .pipe(data(() => { let data = require('./src/data.json'); console.log(data); data }))
   .pipe(nunjucksRender({
-      path: ['src/templates']
-    }))
+    path: ['src/'],
+    manageEnv: function(env){
+      var data = JSON.parse(fs.readFileSync('src/data.json'));
+      env.addGlobal('data', data);
+    }
+  }))
   // output files in app folder
-  .pipe(gulp.dest('dest'))
+  .pipe(gulp.dest('dist'))
 }
 gulp.task('nunjucks', renderTemplates);
 exports.nunjucks = renderTemplates;
@@ -149,7 +152,7 @@ gulp.task('styles', function() {
         .pipe(sass())
         .on('error', console.log)
         .pipe(minifyCSS())
-        .pipe(gulp.dest('dist/build'))
+        .pipe(gulp.dest('dist/css'))
         .pipe(browserSync.stream())
 });
 
@@ -187,8 +190,10 @@ function style() {
 
 function watchFiles() {
   bsInit()
+  gulp.watch('src/data.json', renderTemplates).on('change', browserSync.reload);
+  gulp.watch('src/**/*.(njk|tpl|nunjucks)', renderTemplates).on('change', browserSync.reload);
   gulp.watch('src/scss/**/*.scss', style).on('change', browserSync.reload);
-  gulp.watch('src/*.html', renderHTML).on('change', browserSync.reload);
+  // gulp.watch('src/*.html', renderHTML).on('change', browserSync.reload);
   gulp.watch('dist/css/*.css').on('change', browserSync.reload);
   gulp.watch('dist/**.html').on('change', browserSync.reload);
   gulp.watch('src/**/*.js', processScripts).on('change', browserSync.reload);
@@ -196,4 +201,4 @@ function watchFiles() {
 exports.style = style;
 exports.watch = watchFiles;
 
-gulp.task('default', gulp.series(['scripts', 'styles', 'html', 'assets', watchFiles]));
+gulp.task('default', gulp.series(['scripts', 'styles', 'assets', renderTemplates, watchFiles]));

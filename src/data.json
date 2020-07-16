@@ -1,1 +1,21 @@
-{}
+{
+    "launchpad": {
+        "cards": [
+            {
+                "id": "profile",
+                "icon": "portrait",
+                "description": "About me."
+            },
+            {
+                "id": "projects",
+                "icon": "code",
+                "description": "Check out some of my work."
+            },
+            {
+                "id": "contact",
+                "icon": "alternate_email",
+                "description": "Get in touch."
+            }
+        ]
+    }
+}

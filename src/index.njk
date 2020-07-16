@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "templates/head.njk" %}
+
+<body class="theme theme-light theme-dark">
+
+{% include "templates/navbar.njk" %}
+
+{% include "templates/launchpad.njk" %}
+
+{% include "templates/profile.njk" %}
+
+{% include "templates/portfolio.njk" %}
+
+{% include "templates/contact.njk" %}
+
+{% include "templates/footer.njk" %}
+
+{# Load non-essential scripts after DOM ready for performance #}
+{% include "templates/_load_scripts.njk" %}
+
+{# Include modal dialogs at end as these are least important #}
+{% include "templates/terms_of_use.njk" %}
+
+{% include "templates/acknowledgements.njk" %}
+
+</body>
+
