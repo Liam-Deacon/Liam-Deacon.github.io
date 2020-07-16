@@ -2,9 +2,11 @@
 
 ## Developed With
 
-- Node.js - Javascript runtime.
-- Gulp - A javascript task runner for development streams.
-- <img height="24px" src="https://upload.wikimedia.org/wikipedia/commons/7/72/Gulp.js_Logo.svg" alt=""/> SCSS - A CSS preprocessor metalanguage.
+| | Tool |
+|-|------|
+| <img height="64px" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt=""/> | Node.js - Javascript runtime. |
+| <img height="64px" src="https://upload.wikimedia.org/wikipedia/commons/7/72/Gulp.js_Logo.svg" alt=""/> |Gulp - A javascript task runner for development streams. |
+| <img height="64px" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" alt=""/> | SCSS - A CSS preprocessor metalanguage. |
 
 ### Prequisites
 
