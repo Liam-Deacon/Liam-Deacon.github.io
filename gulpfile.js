@@ -118,13 +118,15 @@ gulp.task('stream', () =>
         )
 );
 
-gulp.task('scripts', function() {
+function processScripts() {
     return gulp.src(['src/**/*.js'])
         .pipe(browserify())
         .pipe(concat('dest.js'))
         .pipe(gulp.dest('dist/build'))
         .pipe(refresh(lrserver));
-});
+}
+gulp.task('scripts', processScripts);
+exports.scripts = processScripts;
 
 gulp.task('styles', function() {
     return gulp.src(['src/scss/*.scss'])
@@ -173,7 +175,7 @@ function watchFiles() {
   gulp.watch('src/*.html', renderHTML).on('change', browserSync.reload);
   gulp.watch('dist/css/*.css').on('change', browserSync.reload);
   gulp.watch('dist/**.html').on('change', browserSync.reload);
-  gulp.watch('./js/**/*.js').on('change', browserSync.reload);
+  gulp.watch('src/**/*.js', processScripts).on('change', browserSync.reload);
 }
 exports.style = style;
 exports.watch = watchFiles;
