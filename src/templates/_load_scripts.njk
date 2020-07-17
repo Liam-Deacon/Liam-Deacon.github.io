@@ -24,9 +24,14 @@
 <!-- Do the following actions on document load event -->
 <script>
     window.addEventListener('load', (event) => {
-        let matches = document.getElementsByClassName('ah-words-wrapper');
-        if (matches !== undefined) {
-            matches[0].style.hidden = false;
+        // fix display of typing headline elements
+        let wrapper = document.getElementsByClassName('ah-words-wrapper');
+        if (wrapper !== undefined) {
+            wrapper[0].style.hidden = false;
+            let children = wrapper[0].children;
+            for (i=0; i < wrapper[0].children.length; i++) {
+                wrapper[0].children[i].style.display = "inline";
+            }
         }
 
         // enable Bootstrap tooltips
