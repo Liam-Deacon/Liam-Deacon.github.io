@@ -84,9 +84,9 @@
             <span>Liam Deacon</span><br>&nbsp;   
             <span class="ah-words-wrapper">
                 <b class="is-visible" style="color: orange">Software Engineer&nbsp;</b>
-                <b style="color: goldenrod">Data Scientist&nbsp;</b>
-                <b style="color: #E9DD6C">Web Developer&nbsp;</b>
-                <b style="color: #E96208">Researcher&nbsp;</b>
+                <b style="color: goldenrod; display: none" hidden>Data Scientist&nbsp;</b>
+                <b style="color: #E9DD6C; display: none" hidden>Web Developer&nbsp;</b>
+                <b style="color: #E96208; display: none" hidden>Researcher&nbsp;</b>
             </span>
         </h1>
     </div>
@@ -645,9 +645,14 @@
 <!-- Do the following actions on document load event -->
 <script>
     window.addEventListener('load', (event) => {
-        let matches = document.getElementsByClassName('ah-words-wrapper');
-        if (matches !== undefined) {
-            matches[0].style.hidden = false;
+        // fix display of typing headline elements
+        let wrapper = document.getElementsByClassName('ah-words-wrapper');
+        if (wrapper !== undefined) {
+            wrapper[0].style.hidden = false;
+            let children = wrapper[0].children;
+            for (i=0; i < wrapper[0].children.length; i++) {
+                wrapper[0].children[i].style.display = "inline";
+            }
         }
 
         // enable Bootstrap tooltips
