@@ -1,4 +1,205 @@
 {
+    "common": {
+        "name": "Liam Deacon",
+        "pic": "assets/images/profile_img.jpg",
+        "punchline": "Developer & Scientist"
+    },
+    "profile": {
+        "skill_tags": [
+            {
+                "title": "Team Working",
+                "popover": {
+                    "image": "<a href='https://www.flaticon.com/free-icon/user_3014153' title='Image made by Freepik on flaticon.com'><img src='https://image.flaticon.com/icons/svg/3014/3014153.svg' class='popup-image'/></a>",
+                    "description": "I've worked in multi-disciplinary teams ranging from 3 to 9 people, and have acted as a technical lead for some projects. I will always spend time to assist more junior members and will leverage my development experience to assist in project decision making."
+                }
+            },
+            {
+                "title": "Communication",
+                "popover": {
+                    "image": "<a href='https://www.flaticon.com/free-icon/group_745205' title='Image made by Freepik on flaticon.com'><img src='https://image.flaticon.com/icons/svg/745/745205.svg' class='popup-image'/></a>",
+                    "description": "I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary."
+                }
+            },
+            {
+                "title": "Agile Methodologies",
+                "popover": {
+                    "image": "<a href='https://www.flaticon.com/free-icon/agile_2784065?term=agility&page=1&position=24' title='Image made by Freepik on flaticon.com'><img src='https://image.flaticon.com/icons/svg/2784/2784065.svg' class='popup-image'/></a>",
+                    "description": "I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary."
+                }
+            },
+            {
+                "title": "Scrum",
+                "popover": {
+                    "image": "<a href='https://www.flaticon.com/free-icon/agile_2649708' title='Image made by Eucalyp on flaticon.com'><img src='https://image.flaticon.com/icons/svg/2649/2649708.svg' class='popup-image'/></a>",
+                    "description": "I've worked in teams using Agile Scrum and acted as scrum master for sprints when necessary."
+                }
+            },
+            {
+                "title": "Kanban",
+                "popover": {
+                    "image": "<a href='https://www.flaticon.com/free-icon/stack_1147091' title='Image made by Freepik on flaticon.com'><img src='https://image.flaticon.com/icons/svg/1147/1147091.svg' class='popup-image'/></a>",
+                    "description": "I've worked within research teams who have used Kanban as an effective alternative approach to Scrum for planning and assigning tasks."
+
+                }
+            },
+            {
+                "title": "CI/CD",
+                "popover": {
+                    "image": "<a href='https://www.flaticon.com/free-icon/mechanism_2612518' title='Image by Phatplus on flaticon.com'><img src='https://image.flaticon.com/icons/svg/2612/2612518.svg' class='popup-image'/></a>",
+                    "description": "I'm a big fan of continuous integration and deployment and have used Travis CI, Azure DevOps, GitLab & GitHub Actions to produce robust well-tested software."
+                }
+            },
+            {
+                "title": "DevOps",
+                "popover": {
+                    "image": "<a href='https://www.flaticon.com/free-icon/infinity_2819153?term=infinity&page=1&position=55' title='Image by Vitaly Gorbachevat flaticon.com'><img src='https://image.flaticon.com/icons/svg/2819/2819153.svg' class='popup-image'/></a>",
+                    "description": "I am a firm believer that incorporating DevOps practices into software development makes better software, saves time and saves headaches! I've been using DevOps practices for a number of years now, combining testing and deployment with cloud technologies to bring about rapid software releases without compromising on quality."
+                }
+            },
+            {
+                "title": "Responsive",
+                "popover": {
+                    "image": "<img src='https://image.flaticon.com/icons/svg/2649/2649708.svg' class='popup-image'/>",
+                    "description": "I try my utmost to be a team player - that means responding promptly to any queries and no leaving things to sink to the bottom of the pile. Saying that, I'm only human and sometimes get into 'the zone' for a few hours when tackling complex problems!"
+                }
+            },
+            {
+                "title": "UML",
+                "popover": {
+                    "image": "<a href='https://www.flaticon.com/free-icon/database_1508840' title='Image by mynamepong at flaticon.com'><img src='https://image.flaticon.com/icons/svg/1508/1508840.svg' class='popup-image'/></a>",
+                    "description": "I've architected software systems, using UML as the <em>de facto</em> engineering lingo for explaining the different parts to the engineering teams. My most recent example was a biometrics data acquisition system at NATS, handling data movements of >5TB per hour!"
+                }
+            },
+            {
+                "title": "GDPR",
+                "popover": {
+                    "image": "",
+                    "description": "Handling personally identifiable information (PII) and navigating GDPR law is experience I can bring to bear."
+                }
+            },
+            {
+                "title": "Data Engineering",
+                "popover": {
+                    "image": "<a href='https://www.flaticon.com/free-icon/engineer_2286696?term=data%20engineer&page=1&position=1' title='Image by wanicon on flaticon.com'><img src='https://image.flaticon.com/icons/svg/2286/2286696.svg' class='popup-image'/></a>",
+                    "description": ""
+                }
+            },
+            {
+                "title": "Data ETL",
+                "popover": {
+                    "image": "<a href='https://www.flaticon.com/free-icon/system_2286729' title='Image by wanicon on flaticon.com'><img src='https://image.flaticon.com/icons/svg/2286/2286729.svg' class='popup-image'/></a>",
+                    "description": ""
+                }
+            },
+            {
+                "title": "Exploratory Data Analysis",
+                "popover": {
+                    "image": "<a href='https://www.flaticon.com/free-icon/monitor_2782163' title='Image by xnimrodx at flaticon.com'><img src='https://image.flaticon.com/icons/svg/2782/2782163.svg' class='popup-image'/></a>",
+                    "description": ""
+                }
+            },
+            {
+                "title": "Data Dashboards",
+                "popover": {
+                    "image": "<a href='https://www.flaticon.com/free-icon/data_2782187' title='Image by xnimrodx on flaticon.com'><img src='https://image.flaticon.com/icons/svg/2782/2782187.svg' class='popup-image'/></a>",
+                    "description": ""
+                }
+            },
+            {
+                "title": "Business Reporting",
+                "popover": {
+                    "image": "<a href='https://www.flaticon.com/free-icon/presentation_3079029' title='Image by Becris on flaticon.com'><img src='https://image.flaticon.com/icons/svg/3079/3079029.svg' class='popup-image'/></a>",
+                    "description": ""
+                }
+            }
+        ],
+        "languages": [
+            {
+                "name": "Python",
+                "rating": 5,
+                "logo": "<img src='https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' class='fa-stack-2x' />",
+                "skill_level": "Pythonista Ninja",
+                "skill_badge": "<img src='https://image.flaticon.com/icons/svg/1297/1297525.svg' class='lang-pic-tooltip'/>"
+            },
+            {
+                "name": "HTML5",
+                "rating": 4,
+                "logo": "<img src='https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg' class='fa-stack-2x' style='left: -5px' />",
+                "skill_level": "Hardened HTML Warrior",
+                "skill_badge": "<img src='https://image.flaticon.com/icons/svg/2332/2332589.svg' class='lang-pic-tooltip'/>"
+            },
+            {
+                "name": "CSS3",
+                "rating": 4,
+                "logo": "<img src='https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg' class='fa-stack-2x' style='left: 5px; width: 50px' />",
+                "skill_level": "CSS Magician",
+                "skill_badge": "<img src='https://image.flaticon.com/icons/svg/1803/1803671.svg' class='lang-pic-tooltip'/>"
+            },
+            {
+                "name": "JavaScript",
+                "rating": 4,
+                "logo": "<img src='https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg' class='fa-stack-2x' style='left: 5px; width: 50px' />",
+                "skill_level": "Seasoned Scripter",
+                "skill_badge": "<img src='https://image.flaticon.com/icons/svg/1303/1303427.svg' class='lang-pic-tooltip'/>"
+            },
+            {
+                "name": "C",
+                "rating": 4,
+                "logo": "<img src='https://seeklogo.com/images/C/c-logo-672525892C-seeklogo.com.png' class='fa-stack-2x' style='left: 5px; width: 60px' />",
+                "skill_level": "C Veteran",
+                "skill_badge": "<img src='https://image.flaticon.com/icons/svg/1303/1303427.svg' class='lang-pic-tooltip'/>"
+            },
+            {
+                "name": "C++",
+                "rating": 4,
+                "logo": "<img src='https://seeklogo.com/images/C/c-logo-43CE78FF9C-seeklogo.com.png' class='fa-stack-2x' style='left: 5px; width: 60px' />",
+                "skill_level": "Hardened",
+                "skill_badge": "<img src='https://image.flaticon.com/icons/svg/1303/1303427.svg' class='lang-pic-tooltip'/>"
+            },
+            {
+                "name": "Fortran",
+                "rating": 3,
+                "logo": "<img src='https://upload.wikimedia.org/wikipedia/commons/b/b6/Fortran.png' class='fa-stack-2x' style='left: 5px; width: 60px'/>",
+                "skill_level": "Rusty",
+                "skill_badge": "<img src='https://image.flaticon.com/icons/svg/1303/1303427.svg' class='lang-pic-tooltip'/>"
+            },
+            {
+                "name": "SQL",
+                "rating": 3,
+                "logo": "<i class='fi fi-database fa-stack-2x sql-icon' style='left: 5px; width: 60px;'></i>",
+                "skill_level": "Competent",
+                "skill_badge": ""
+            },
+            {
+                "name": "C#",
+                "rating": 3,
+                "logo": "<img src='https://upload.wikimedia.org/wikipedia/commons/7/7a/C_Sharp_logo.svg' class='fa-stack-2x' style='left: 5px; width: 60px' />",
+                "skill_level": "Competent enough",
+                "skill_badge": ""
+            },
+            {
+                "name": "Java",
+                "rating": 3,
+                "logo": "<img src='https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg' class='fa-stack-2x' style='left: 10px; width: 40px' />",
+                "skill_level": "Have developed in Java",
+                "skill_badge": "<img src='https://image.flaticon.com/icons/svg/1303/1303427.svg' class='lang-pic-tooltip'/>"
+            },
+            {
+                "name": "VB.NET",
+                "rating": 2,
+                "logo": "<img src='https://upload.wikimedia.org/wikipedia/commons/4/40/VB.NET_Logo.svg' class='fa-stack-2x' style='left: 0px; top: 5px; width: 60px' />",
+                "skill_level": "Out of practice",
+                "skill_badge": "<img src='https://image.flaticon.com/icons/svg/3159/3159079.svg' class='lang-pic-tooltip'/>"
+            },
+            {
+                "name": "Rust",
+                "rating": 2,
+                "logo": "<img src='https://www.rust-lang.org/logos/rust-logo-256x256.png' class='fa-stack-2x' style='left: -5px;'/>",
+                "skill_level": "Learning",
+                "skill_badge": "<img src='https://image.flaticon.com/icons/svg/201/201612.svg' class='lang-pic-tooltip'/>"
+            }
+        ]
+    },
     "launchpad": {
         "cards": [
             {

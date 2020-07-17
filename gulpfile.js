@@ -102,11 +102,11 @@ gulp.task('uglifyJS', () =>
         .pipe(gulp.dest('dist/js'))
 );
 
-// gulp.task('imagemin', () => 
-//     gulp.src('./src/assets/images/*')
-//         .pipe(imagemin())
-//         .pipe(gulp.dest('./dist/assets/images'))
-// );
+gulp.task('imagemin', () => 
+    gulp.src('./src/assets/images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./dist/assets/images'))
+);
 
 gulp.task('stream', () =>
         gulp.watch('./src', () => 
@@ -132,7 +132,7 @@ function renderTemplates() {
     }
   }))
   // output files in app folder
-  .pipe(gulp.dest('dist'))
+  .pipe(gulp.dest('dist/'))
 }
 gulp.task('nunjucks', renderTemplates);
 exports.nunjucks = renderTemplates;
@@ -174,10 +174,10 @@ function renderHTML() {
 gulp.task('html', renderHTML);
 
 gulp.task('assets', function() {
-    return gulp.src("dist/assets/**")
+    return gulp.src("src/assets/**")
         .pipe(imagemin({optimizationLevel: 5}))
         .pipe(gulp.dest('dist/assets/'))
-        .pipe(refresh(lrserver));
+        // .pipe(refresh(lrserver));
 });
 
 //compile scss into css
@@ -188,11 +188,15 @@ function style() {
   .pipe(browserSync.stream({match: '**/*.css'}));
 }
 
+transpileSass = run('npm run build:scss');
+exports.sass = transpileSass;
+gulp.task('build:sass', transpileSass);
+
 function watchFiles() {
   bsInit()
   gulp.watch('src/data.json', renderTemplates).on('change', browserSync.reload);
   gulp.watch('src/**/*.(njk|tpl|nunjucks)', renderTemplates).on('change', browserSync.reload);
-  gulp.watch('src/scss/**/*.scss', style).on('change', browserSync.reload);
+  gulp.watch('src/scss/**/*.scss', transpileSass).on('change', browserSync.reload);
   // gulp.watch('src/*.html', renderHTML).on('change', browserSync.reload);
   gulp.watch('dist/css/*.css').on('change', browserSync.reload);
   gulp.watch('dist/**.html').on('change', browserSync.reload);
@@ -201,4 +205,4 @@ function watchFiles() {
 exports.style = style;
 exports.watch = watchFiles;
 
-gulp.task('default', gulp.series(['scripts', 'styles', 'assets', renderTemplates, watchFiles]));
+gulp.task('default', gulp.series(['scripts', 'build:sass', 'assets', renderTemplates, watchFiles]));

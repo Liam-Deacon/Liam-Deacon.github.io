@@ -3,10 +3,11 @@
     "name": "liam-deacon-github-io",
     "version": "0.0.1",
     "scripts": {
-        "build": "npm run clean && npm run build:scss && npm run build:copy",
+        "build": "npm run clean && npm run build:scss && npm run build:nunjucks",
         "build:copy": "cp -r src/*.html dist/ && cp -r src/js dist/",
         "build:prod": "npm run format && npm run build",
         "build:scss": "./node_modules/.bin/sass -I src/scss src/scss/:dist/css/",
+        "build:nunjucks": "./node_modules/.bin/gulp nunjucks",
         "clean": "node scripts/clean.js",
         "deploy": "npm run build:prod && npm run deploy:gh-pages",
         "deploy:gh-pages": "git subtree push --prefix dist origin gh-pages",
