@@ -9,7 +9,14 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Alan_Turing_Institute_logo.svg"/>
         <br><br>
         <hr>
-        <span style="font-size: larger">If you 💖 this page, then please leave a star at <a href="https://github.com/liam-deacon/liam-deacon/github.io"><i class="fi fi-github"></i></a></span>
+        <h3>Technology stack used for this site</h3>
+        <div>
+            {%- for tech in data.footer.stack -%}
+            <img src="{{ tech.logo }}" alt="" href="{{ tech.link }}" title="{{ tech.name }} - {{ tech.description }}"/>
+            {% endfor %}
+        </div>
+        <hr>
+        <span style="font-size: larger">If you 💖 this page, then please consider leaving a star at <a href="https://github.com/liam-deacon/liam-deacon/github.io"><i class="fi fi-github"></i></a></span>
     </div>
     <b>Copyright &copy; 2020 Liam Deacon</b> | Some rights reserved | <u onclick="$('#termsOfUseModal').modal('show');">Terms of Use</u> | <u onclick="$('#acknowledgementsModal').modal('show');">Acknowledgements</u>
 </footer>

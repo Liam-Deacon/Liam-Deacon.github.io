@@ -218,5 +218,47 @@
                 "description": "Get in touch."
             }
         ]
+    },
+    "footer": {
+        "companies": [],
+        "stack": [
+            {
+                "name": "Node.js",
+                "link": "https://nodejs.org/en/about/",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+                "description": "Javascript runtime"
+            },
+            {
+                "name": "Gulp",
+                "link": "https://gulpjs.com/",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/7/72/Gulp.js_Logo.svg",
+                "description": "A javascript task runner for development streams."
+            },
+            {
+                "name": "SCSS",
+                "link": "https://sass-lang.com/documentation/syntax",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg",
+                "description": "A CSS preprocessor metalanguage."
+            },
+            {
+                "name": "Nunjucks",
+                "link": "https://mozilla.github.io/nunjucks/",
+                "logo": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_nunjucks_icon_130292.png",
+                "description": "Allows HTML components using templating metalanguage heavy based of Jinja2/Django."
+            },
+            {
+                "name": "Bootstrap",
+                "link": "https://getbootstrap.com/",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
+                "description": "Responsive web framework."   
+            },
+            {
+                "name": "JSON",
+                "link": "",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c9/JSON_vector_logo.svg",
+                "description": "JSON - Flexible data format."
+            }
+
+        ]
     }
 }
