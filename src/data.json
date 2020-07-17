@@ -220,7 +220,44 @@
         ]
     },
     "footer": {
-        "companies": [],
+        "companies": [
+            {
+                "name": "Diamond Light Source",
+                "link": "",
+                "logo": "https://www.diamond.ac.uk/dam/jcr:065263ac-e27e-4ed1-b6fe-4cfdf71d8fe6/dls_logo.2020-02-21-14-12-04.png",
+                "description": ""
+            },
+            {
+                "name": "University of Reading",
+                "link": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Reading_shield.png",
+                "logo": "",
+                "description": ""
+            },
+            {
+                "name": "Hewlett Packard",
+                "link": "",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ad/HP_logo_2012.svg",
+                "description": ""
+            },
+            {
+                "name": "Hewlett Packard Enterprise",
+                "link": "",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/4/46/Hewlett_Packard_Enterprise_logo.svg",
+                "description": ""
+            },
+            {
+                "name": "National Air Transport Services",
+                "link": "",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/4/4c/NATS_logo.svg",
+                "description": ""
+            },
+            {
+                "name": "Alan Turing Institute",
+                "link": "",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Alan_Turing_Institute_logo.svg",
+                "description": ""
+            }
+        ],
         "stack": [
             {
                 "name": "Node.js",
