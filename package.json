@@ -4,7 +4,7 @@
     "version": "0.0.1",
     "scripts": {
         "build": "npm run clean && npm run build:scss && npm run build:nunjucks && npm run build:copy",
-        "build:copy": "cp -r src/assets dist/ && cp -r src/js dist/",
+        "build:copy": "cp -r src/assets dist/ && cp -r src/js dist/ && cp README.md dist/",
         "build:prod": "npm run format && npm run build",
         "build:scss": "./node_modules/.bin/sass -I src/scss src/scss/:dist/css/",
         "build:nunjucks": "./node_modules/.bin/gulp nunjucks",

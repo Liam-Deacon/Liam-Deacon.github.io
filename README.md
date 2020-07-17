@@ -1,5 +1,7 @@
 # My Portfolio
 
+The actual code is on the <a href="https://github.com/Liam-Deacon/Liam-Deacon.github.io/tree/dev"><code>dev</code></a> branch and the <code>dist/</code> folder deployed to <code>master</code> via GitHub Actions CI.
+
 ## Developed With
 
 | | Tool |
