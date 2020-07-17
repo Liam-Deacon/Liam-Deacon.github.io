@@ -3,7 +3,7 @@
         <h3>Companies I have worked with</h3>
         <div id="companies">
             {%- for company in data.footer.companies -%}
-            <img src="{{ company.logo }}" alt="" href="{{ company.link }}" data-html="true" data-toggle="popover" title="{{ company.name }}<br><br>{{ company.description }}"/>
+            <img src="{{ company.logo }}" alt="" href="{{ company.link }}" data-html="true" data-toggle="tooltip" title="{{ company.name }}<br><br>{{ company.description }}"/>
             {% endfor %}
         </div>
         <br><br>
@@ -11,7 +11,7 @@
         <h3>Technology stack used for this site</h3>
         <div id="tech">
             {%- for tech in data.footer.stack -%}
-            <img src="{{ tech.logo }}" alt="" href="{{ tech.link }}" data-html="true" data-toggle="popover" title="{{ tech.name }} - {{ tech.description }}"/>
+            <img src="{{ tech.logo }}" alt="" href="{{ tech.link }}" data-html="true" data-toggle="tooltip" title="{{ tech.name }} - {{ tech.description }}"/>
             {% endfor %}
         </div>
         <hr>

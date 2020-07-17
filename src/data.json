@@ -4,6 +4,37 @@
         "pic": "assets/images/profile_img.jpg",
         "punchline": "Developer & Scientist"
     },
+    "portfolio": {
+        "projects": [
+            {
+                "name": "Elemental",
+                "link": "",
+                "image": "https://cdn.pixabay.com/photo/2017/06/15/11/49/question-mark-2405202_1280.png",
+                "description": "",
+                "stack": [
+                    
+                ]
+            },
+            {
+                "name": "Elemental",
+                "link": "",
+                "image": "https://cdn.pixabay.com/photo/2017/06/15/11/49/question-mark-2405202_1280.png",
+                "description": "",
+                "stack": [
+                    
+                ]
+            },
+            {
+                "name": "Elemental",
+                "link": "",
+                "image": "https://cdn.pixabay.com/photo/2017/06/15/11/49/question-mark-2405202_1280.png",
+                "description": "",
+                "stack": [
+                    
+                ]
+            }
+        ]
+    },
     "profile": {
         "skill_tags": [
             {
@@ -223,14 +254,14 @@
         "companies": [
             {
                 "name": "Diamond Light Source",
-                "link": "",
+                "link": "https://www.diamond.ac.uk/Home/About.html",
                 "logo": "https://www.diamond.ac.uk/dam/jcr:065263ac-e27e-4ed1-b6fe-4cfdf71d8fe6/dls_logo.2020-02-21-14-12-04.png",
                 "description": ""
             },
             {
                 "name": "University of Reading",
-                "link": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Reading_shield.png",
-                "logo": "",
+                "link": "",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Reading_shield.png",
                 "description": ""
             },
             {
@@ -293,7 +324,7 @@
                 "name": "JSON",
                 "link": "",
                 "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c9/JSON_vector_logo.svg",
-                "description": "JSON - Flexible data format."
+                "description": "JavaScript's awesome flexible data format."
             }
 
         ]
