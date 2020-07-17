@@ -231,6 +231,32 @@
             }
         ]
     },
+    "navbar": [
+        {
+            "link": "#launchpad",
+            "text": "Launchpad",
+            "image_class": "lni lni-rocket"
+
+        },
+        {
+            "link": "#profile",
+            "text": "Profile",
+            "image_class": "lni lni-support"
+
+        },
+        {
+            "link": "#projects",
+            "text": "Projects",
+            "image_class": "lni lni-construction"
+
+        },
+        {
+            "link": "#contact",
+            "text": "Contact",
+            "image_class": "fi fi-commenting normal"
+
+        }
+    ],
     "launchpad": {
         "cards": [
             {
