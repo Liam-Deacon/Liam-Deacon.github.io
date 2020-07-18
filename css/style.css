@@ -573,8 +573,6 @@ i.no-fill-star {
   background: -webkit-linear-gradient(left, gold, darkorange);
   margin-top: 10%;
   margin-bottom: 5%;
-  width: 70%;
-  border-radius: 2.5%;
 }
 
 .contact-form .form-control {
@@ -621,7 +619,7 @@ i.no-fill-star {
 }
 
 .btnContact:hover {
-  width: 50%;
+  min-width: 50px;
   border-radius: 1rem;
   padding: 1.5%;
   color: #fff;
