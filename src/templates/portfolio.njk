@@ -1,15 +1,10 @@
 <!-- Portfolio Section-->
-<section class="page-section portfolio" id="projects">
+<section class="portfolio" id="projects">
+    <div style="padding-top: 200px;">
     <div class="container">
         <!-- Portfolio Section Heading-->
-        <h1 class="headline page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h1>
+        <h1 class="headline text-center text-uppercase text-secondary mb-0">Portfolio</h1>
         
-        <!-- Icon Divider-->
-        <div class="divider-custom">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon text-center">***</i></div>
-            <div class="divider-custom-line"></div>
-        </div>
         <!-- Portfolio Grid Items-->
         <div class="row">
             {%- for project in data.portfolio.projects -%}
@@ -20,9 +15,12 @@
                         <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                     </div>
                     <img class="img-fluid" src="{{ project.image }}" alt="" />
+                    <br>
+                    <h4 href="{{ project.link }}" class="justify-content-center">{{ project.name }}</h4>
                 </div>
             </div>
             {% endfor %}
         </div>
     </div> <!-- container -->
+    </div>
 </section> <!-- Portfolio -->
