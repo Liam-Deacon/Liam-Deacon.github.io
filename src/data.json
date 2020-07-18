@@ -49,7 +49,7 @@
             {
                 "name": "Phaseshifts",
                 "link": "https://github.com/Liam-Deacon/phaseshifts",
-                "image": "https://github.com/Liam-Deacon/phaseshifts/raw/f4f7a0adecb16de88688e7fcfb5beaf9318172ef/doc/phaseshifts.png",
+                "image": "https://github.com/Liam-Deacon/phaseshifts/raw/23307b42e2d7b1fe772f78257635dc0872ca7ea4/doc/phaseshifts.png",
                 "tagline": "Calculate phaseshifts in solid materials",
                 "description": "I am the author and maintainer of a Python package enabling user friendly calculation of atomic phase shifts. The project incorporates OO classes which interface to legacy FORTRAN code wrapped using either f2py or ctypes and presents a simple command line program for performing common tasks and calculations. The project also incorporated some parallel programming using OpenMP in Fortran to significantly speed up the underlying calculations. During the development of the package, I have been documenting the code and API using Sphinx to help facilitate future development. Furthermore, as the project has matured I have supported users, adding requested features, addressing bugs and updating the supporting documentation. I also introduced some DevOps practices into this project to target multiple platforms and operating systems.",
                 "tags": [
