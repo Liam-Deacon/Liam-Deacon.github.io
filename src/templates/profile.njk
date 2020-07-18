@@ -113,7 +113,7 @@
                                 </div>
                                 <ul class="list">
                                     {%- for skill in data.profile.skill_tags -%}
-                                    <li><button class="skill-tag" data-html="true" data-toggle="popover" title="<b>{{ skill.title | safe }}</b>" data-content="{{ skill.popover.image | safe }}{{ skill.popover.description | safe }}">{{ skill.title | safe }}</button></li>
+                                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b>{{ skill.title | safe }}</b>" data-content="{{ skill.popover.image | safe }}{{ skill.popover.description | safe }}">{{ skill.title | safe }}</button></li>
                                     {% endfor %}<br>
                                 </ul>
                             </div>
