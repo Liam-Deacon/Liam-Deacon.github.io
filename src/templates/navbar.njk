@@ -11,11 +11,8 @@
         <ul class="nav navbar-nav collapse navbar-collapse">
             {%- for nav in data.navbar -%}
             <li class="nav-item d-none d-md-block">
-                <a href="{{ nav.link }}" class="nav-link"><i class="{{ nav.image_class }}"></i>{{ nav.text }}</a> <!-- Visible on Medium and larger -->
+                <a href="{{ nav.link }}" class="nav-link"><i class="{{ nav.image_class }}">&nbsp;</i>{{ nav.text }}</a> <!-- Visible on Medium and larger -->
             </li>
-            {# <li class="nav-item d-md-none">
-                <a href="{{ nav.link }}" class="nav-link"><i class="{{ nav.image_class }}"></i></a> <!-- Visible when smaller than Medium -->
-            </li>  #}
             {% endfor %}
             <li class="theme-toggle header-link">
                 <a href="#" >
