@@ -11,27 +11,52 @@
                 "name": "Elemental",
                 "link": "",
                 "image": "https://cdn.pixabay.com/photo/2017/06/15/11/49/question-mark-2405202_1280.png",
+                "tagline": "",
                 "description": "",
+                "tags": [
+
+                ],
                 "stack": [
                     
                 ]
             },
             {
-                "name": "Elemental",
-                "link": "",
-                "image": "https://cdn.pixabay.com/photo/2017/06/15/11/49/question-mark-2405202_1280.png",
-                "description": "",
+                "name": "MetaPandas",
+                "link": "https://github.com/LightBytes/metapandas",
+                "image": "https://raw.githubusercontent.com/LightBytes/metapandas/master/docs/source/static/metapandas.svg",
+                "tagline": "Track metadata when using pandas via JSON",
+                "description": "The project is aimed at data engineers and scientists who want to know how their data frame was put together, with minimal user code for recording the etymology of data as it is used within ETL/analysis workflows, which is achieved transparently to the user by using a combination of code reflection and JSON metadata. It tries to use good software engineering principles with unit testing, code coverage, static analysis and CI/CD via GitHub Actions.",
+                "tags": [
+
+                ],
                 "stack": [
                     
                 ]
             },
             {
-                "name": "Elemental",
-                "link": "",
+                "name": "CLEED",
+                "link": "https://github.com/Liam-Deacon/CLEED",
                 "image": "https://cdn.pixabay.com/photo/2017/06/15/11/49/question-mark-2405202_1280.png",
-                "description": "",
+                "tagline": "Computational package for Low Energy Electron Diffraction",
+                "description": "I developed and maintained an open source C based project for the computational calculation of low energy electron diffraction in collaboration with Prof. Georg Held, which compares theoretical models to experimental data. The original code base consists of a number of legacy programs developed by different authors spanning a period of almost 20 years and I have therefore spent considerable effort unifying and modernising the source code to better adhere to best practices and standards, whilst also leveraging open source libraries, such as GSL, libtiff, Cairo, and BLAS/Lapack. As part of turning the original programs into a fully-fledged open source project, I have placed the code under Git revision control, produced documentation using Doxygen, created cross-platform builds using the CMake makefile generator/packaging tool, as well as gained experience debugging with GDB. There is an aim of producing a user-friendly GUI/UX using Python/Qt.",
+                "tags": [
+
+                ],
                 "stack": [
                     
+                ]
+            },
+            {
+                "name": "Phaseshifts",
+                "link": "https://github.com/Liam-Deacon/phaseshifts",
+                "image": "",
+                "tagline": "Calculate phaseshifts in solid materials",
+                "description": "I am the author and maintainer of a Python package enabling user friendly calculation of atomic phase shifts. The project incorporates OO classes which interface to legacy FORTRAN code wrapped using either f2py or ctypes and presents a simple command line program for performing common tasks and calculations. The project also incorporated some parallel programming using OpenMP in Fortran to significantly speed up the underlying calculations. During the development of the package, I have been documenting the code and API using Sphinx to help facilitate future development. Furthermore, as the project has matured I have supported users, adding requested features, addressing bugs and updating the supporting documentation. I also introduced some DevOps practices into this project to target multiple platforms and operating systems.",
+                "tags": [
+
+                ],
+                "stack": [
+
                 ]
             }
         ]
