@@ -13,9 +13,11 @@
             {%- for tech in data.footer.stack -%}
             <img src="{{ tech.logo }}" alt="" href="{{ tech.link }}" data-html="true" data-toggle="tooltip" title="{{ tech.name }} - {{ tech.description }}"/>
             {% endfor %}
+            <br>
+            <a class="text-muted" href="{{ data.common.repo }}/tree/dev"><small><i class="fas fa-eye">&nbsp;</i>View source</small></a>
         </div>
         <hr>
-        <span style="font-size: larger">If you 💖 this page, then please consider leaving a star at <a href="https://github.com/liam-deacon/liam-deacon/github.io"><i class="fi fi-github"></i></a></span>
+        <span style="font-size: larger">If you 💖 this page, then please consider leaving a ⭐ at <a href="{{ data.common.repo }}"><i class="fi fi-github"></i></a></span>
     </div>
-    <b>Copyright &copy; 2020 Liam Deacon</b> | Some rights reserved | <u onclick="$('#termsOfUseModal').modal('show');">Terms of Use</u> | <u onclick="$('#acknowledgementsModal').modal('show');">Acknowledgements</u>
+    <b>Copyright &copy; 2020 {{ data.common.name }}</b> | Some rights reserved | <u onclick="$('#termsOfUseModal').modal('show');">Terms of Use</u> | <u onclick="$('#acknowledgementsModal').modal('show');">Acknowledgements</u>
 </footer>
