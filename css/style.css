@@ -552,6 +552,9 @@ i.no-fill-star {
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
   font-size: 1.5rem;
 }
+.portfolio img {
+  height: 180px;
+}
 
 .portfolio-modal .portfolio-modal-title {
   font-size: 2.25rem;
