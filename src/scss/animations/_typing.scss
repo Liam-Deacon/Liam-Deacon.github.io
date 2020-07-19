@@ -4,9 +4,14 @@
 
 .ah-headline {
   text-align: center;
+
+  span {
+    color: white;
+  }
 }
 
 .css-typing p {
+    color: white;
     border-right: .15em solid orange;
     font-family: "Courier";
     font-size: 14px;
