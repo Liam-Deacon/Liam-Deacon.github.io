@@ -70,8 +70,12 @@ input:checked + .slider:before {
 .ah-headline {
   text-align: center;
 }
+.ah-headline span {
+  color: white;
+}
 
 .css-typing p {
+  color: white;
   border-right: 0.15em solid orange;
   font-family: "Courier";
   font-size: 14px;
