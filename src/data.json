@@ -314,25 +314,25 @@
                 "name": "University of Reading",
                 "link": "",
                 "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Reading_shield.png",
-                "description": "During my PhD I researched polar oxide surfaces in nanoscience / material science."
+                "description": "During my PhD I researched polar oxide surfaces in nanoscience / material science. I wrote software for interfacing equipment as well as for data analysis. My research allowed me to gain exposure into using Linux clusters for computational modelling, amongst other uses."
             },
             {
                 "name": "Hewlett Packard",
                 "link": "",
                 "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ad/HP_logo_2012.svg",
-                "description": ""
+                "description": "I worked on the AMPA Air Mission Planning Aid, which is a software tool used by the RAF."
             },
             {
                 "name": "Hewlett Packard Enterprise",
                 "link": "",
                 "logo": "https://upload.wikimedia.org/wikipedia/commons/4/46/Hewlett_Packard_Enterprise_logo.svg",
-                "description": ""
+                "description": "As part of my work for HPE I wrote Python, C & C++, gained exposure to the whole SDL and used GUI automation tools for integration testing."
             },
             {
                 "name": "National Air Transport Services",
                 "link": "https://www.nats.aero/services-products/",
                 "logo": "https://upload.wikimedia.org/wikipedia/en/4/4c/NATS_logo.svg",
-                "description": ""
+                "description": "I have acted as technical lead on an Azure cloud platform aimed at data science and research as well on a big data biometrics project collecting ~5TB/hour. I consulted on the direction for the technology stack for NATS' collaboration with the Alan Turing Institute into research for automating air traffic & was a lead proponent in the use of modern DevSecOps to facilitate this research."
             },
             {
                 "name": "Alan Turing Institute",
