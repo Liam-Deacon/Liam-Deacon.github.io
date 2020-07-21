@@ -138,28 +138,28 @@
                 "title": "Data Engineering",
                 "popover": {
                     "image": "<a href='https://www.flaticon.com/free-icon/engineer_2286696?term=data%20engineer&page=1&position=1' title='Image by wanicon on flaticon.com'><img src='https://image.flaticon.com/icons/svg/2286/2286696.svg' class='popup-image'/></a>",
-                    "description": ""
+                    "description": "I have experience in cleaning, wrangling and feature engineering of rich and diverse datasets - including using said data as part of data pipelines."
                 }
             },
             {
                 "title": "Data ETL",
                 "popover": {
                     "image": "<a href='https://www.flaticon.com/free-icon/system_2286729' title='Image by wanicon on flaticon.com'><img src='https://image.flaticon.com/icons/svg/2286/2286729.svg' class='popup-image'/></a>",
-                    "description": ""
+                    "description": "Extraction, transformation and loading of data is a familiar activity to me. My weapon of choice is Python / Pandas, but I am comfortable making SQL queries in data warehousing environments."
                 }
             },
             {
                 "title": "Exploratory Data Analysis",
                 "popover": {
                     "image": "<a href='https://www.flaticon.com/free-icon/monitor_2782163' title='Image by xnimrodx at flaticon.com'><img src='https://image.flaticon.com/icons/svg/2782/2782163.svg' class='popup-image'/></a>",
-                    "description": ""
+                    "description": "I enjoy trying to understand what the data is telling me. To this end I am a strong advocate of Jupyter notebooks as their ease of use, flexibility and speed for prototyping and exploring ideas & data is unmatched."
                 }
             },
             {
                 "title": "Data Dashboards",
                 "popover": {
                     "image": "<a href='https://www.flaticon.com/free-icon/data_2782187' title='Image by xnimrodx on flaticon.com'><img src='https://image.flaticon.com/icons/svg/2782/2782187.svg' class='popup-image'/></a>",
-                    "description": ""
+                    "description": "I understand the value of presenting data to specific audiences and find that data dashboards are a fantastic way of allowing others to interact with datasets. My tool of choice for this is Plotly's Dash, although I am aware of other lotions, including PowerBI & Shiny."
                 }
             },
             {
@@ -308,13 +308,13 @@
                 "name": "Diamond Light Source",
                 "link": "https://www.diamond.ac.uk/Home/About.html",
                 "logo": "https://www.diamond.ac.uk/dam/jcr:065263ac-e27e-4ed1-b6fe-4cfdf71d8fe6/dls_logo.2020-02-21-14-12-04.png",
-                "description": ""
+                "description": "I worked as the B07 VERSOX beamline's support scientist between 2013-2015. The role involved assisting in the design, procurement and development of data acquisition systems for soft x-ray analysis under near ambient pressure."
             },
             {
                 "name": "University of Reading",
                 "link": "",
                 "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Reading_shield.png",
-                "description": ""
+                "description": "During my PhD I researched polar oxide surfaces in nanoscience / material science."
             },
             {
                 "name": "Hewlett Packard",
@@ -330,15 +330,15 @@
             },
             {
                 "name": "National Air Transport Services",
-                "link": "",
+                "link": "https://www.nats.aero/services-products/",
                 "logo": "https://upload.wikimedia.org/wikipedia/en/4/4c/NATS_logo.svg",
                 "description": ""
             },
             {
                 "name": "Alan Turing Institute",
-                "link": "",
+                "link": "https://www.turing.ac.uk/collaborate-turing/current-partnerships-and-collaborations/nats",
                 "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Alan_Turing_Institute_logo.svg",
-                "description": ""
+                "description": "I collaborated with the Alan Turing Institute as part of my work at NATS. I attended data study groups (week-long hackathon challenges) & prepared aviation tools and data for the April 2019  challenge at by NATS)."
             }
         ],
         "stack": [
