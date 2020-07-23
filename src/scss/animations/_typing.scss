@@ -55,6 +55,18 @@
     animation-fill-mode: forwards;
   }
   
+  @media only screen and (max-width: 750px) {
+    .css-typing {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    .css-typing p:nth-child(2) {
+      width: 80%;
+      padding-left: 15%;
+    }
+  }
+
   @keyframes type {
     0% {
       width: 0;
