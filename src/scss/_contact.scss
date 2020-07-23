@@ -22,13 +22,13 @@
 
 .contact-image img {
     border-radius: 6rem;
-    width: 11%;
+    width: 20%;
     margin-top: -3%;
     // transform: rotate(29deg);
 }
 
 .contact-form form {
-   padding: 2%; // 14%;
+   padding: 1px; // 14%;
    padding-top: 14%;
    padding-bottom: 14%;
 }
@@ -116,7 +116,6 @@
     }
 }
 
-
 .team-single-icons-alt ul li, .team-single-icons ul li {
     display: inline-block;
     border: 2px solid $social_icon_color;
@@ -125,7 +124,7 @@
     margin-right: 8px;
     margin-bottom: 5px;
     -webkit-transition-duration: .3s;
-    transition-duration: .3s
+    transition-duration: .3s;
 }
 
 .team-single-icons-alt ul li {
