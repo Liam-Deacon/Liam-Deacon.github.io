@@ -3,7 +3,7 @@
         <h3>Companies I have worked with</h3>
         <div id="companies">
             {%- for company in data.footer.companies -%}
-            <img src="{{ company.logo }}" alt="" href="{{ company.link }}" data-html="true" data-toggle="tooltip" title="{{ company.name }}<br><br>{{ company.description }}"/>
+            <img src="{{ company.logo }}" alt="" href="{{ company.link }}" data-html="true" data-toggle="tooltip" title="<b>{{ company.name }}</b><br><br>{{ company.description }}"/>
             {% endfor %}
         </div>
         <br><br>
