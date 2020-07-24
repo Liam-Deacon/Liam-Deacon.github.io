@@ -1,25 +1,22 @@
 <!-- Portfolio Section-->
-<section class="portfolio" id="projects">
-    <div style="padding-top: 200px;">
+<section class="portfolio" id="projects" style="padding-top: 200px;">
+    {# <p>Here are some projects I have worked on. Some are under NDA and therefore I can discuss #}
     <div class="container">
         <!-- Portfolio Section Heading-->
         <h1 class="headline text-center text-uppercase text-secondary mb-0">Portfolio</h1>
         
         <!-- Portfolio Grid Items-->
-        <div class="row">
+        <div class="row text-center">
             {%- for project in data.portfolio.projects -%}
             <!-- Portfolio Item{{ loop.index }}: {{ project.name }} --> 
-            <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto text-center" data-toggle="modal" data-target="#portfolioModal{{ project.name | capitalize }}">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <div class="hovereffect text-center">
-                        <img class="img-responsive mx-auto d-block" src="{{ project.image }}" alt="">
+            <div class="">
+                <div class="text-center" data-toggle="modal" data-target="#portfolio_modal_{{ project.name | lower }}">
+                    <div class="hovereffect">
+                        <img class="mx-auto d-block" src="{{ project.image }}" alt="">
                         <div class="overlay">
                             <h2>{{ project.name }}</h2>
                             <span>{{ project.tagline }}</span><br>
-                            <a class="info" href="{{ project.link }}">Source Code</a>
+                            <a class="info">More info</a>
                         </div>
                     </div>
                     {# <img class="img-fluid" src="{{ project.image }}" alt="" /> #}
@@ -32,5 +29,36 @@
             {% endfor %}
         </div>
     </div> <!-- container -->
-    </div>
 </section> <!-- Portfolio -->
+
+{%- for project in data.portfolio.projects -%}
+<!-- Acknowledgements Modal -->
+<div class="modal fade" id="portfolio_modal_{{ project.name | lower }}" tabindex="-1" role="dialog" aria-labelledby="acknowledgementsModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">{{ project.name }}</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                {{ project.description }}
+                <br>
+                <h4 style="font-size: medium"><i class="fa fa-tag">&nbsp;</i>Tags</h4>
+                <ul class="list">
+                    {%- for tag in project.tags -%}
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b>{{ skill.title | safe }}</b>" data-content="{{ skill.popover.image | safe }}{{ skill.popover.description | safe }}">{{ tag | safe }}</button></li>
+                    {% endfor %}<br>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                {%- if project.link -%}
+                <a href="{{ project.link }}"><button type="button" class="btn btn-secondary"><i class="fa fa-github">&nbsp;</i>Source Code</button></a>
+                {% endif %}
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}

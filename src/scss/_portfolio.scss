@@ -25,7 +25,7 @@
         }
     }
     img {
-        height: 180px;
+        height: 200px;
     }
 }
 
@@ -79,7 +79,7 @@
   }
   
   .hovereffect img {
-    display: block;
+    display: inline-block;
     position: relative;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
