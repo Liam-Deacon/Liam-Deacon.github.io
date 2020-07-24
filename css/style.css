@@ -572,7 +572,7 @@ i.no-fill-star {
   font-size: 1.5rem;
 }
 .portfolio img {
-  height: 180px;
+  height: 200px;
 }
 
 .portfolio-modal .portfolio-modal-title {
@@ -618,7 +618,7 @@ i.no-fill-star {
 }
 
 .hovereffect img {
-  display: block;
+  display: inline-block;
   position: relative;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
