@@ -7,7 +7,10 @@
         "phone": "7392340840",
         "linkedin_id": "liam-matthew-deacon",
         "email": "liam.deacon@lightbytestechnology.co.uk",
-        "skype_invite": "aChf1z3WHJuV"
+        "skype_invite": "aChf1z3WHJuV",
+        "github_id": "Liam-Deacon",
+        "stackoverflow_id": "2318834/liam-deacon",
+        "hackerrank_id": "liam_m_deacon"
     },
     "portfolio": {
         "projects": [
@@ -96,6 +99,9 @@
         ]
     },
     "profile": {
+        "role": "Software Consultant",
+        "description": "I am a natural tinkerer&#44; technology enthusiast and life-long learner! <br>I love challenges and take pride in the work that I do 🚀",
+        "about": "I'm a versatile researcher and software engineer who enjoys working on interesting ideas and concepts.",
         "skill_tags": [
             {
                 "title": "Team Working",
@@ -373,6 +379,20 @@
                 "link": "https://www.turing.ac.uk/collaborate-turing/current-partnerships-and-collaborations/nats",
                 "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Alan_Turing_Institute_logo.svg",
                 "description": "I collaborated with the Alan Turing Institute as part of my work at NATS. I attended data study groups (week-long hackathon challenges) & prepared aviation tools and data for the April 2019  challenge at by NATS)."
+            }
+        ],
+        "companies_extra": [
+            {
+                "name": "Parico Ltd.",
+                "link": "https://www.linkedin.com/company/paricoltd/about/",
+                "logo": "https://media-exp1.licdn.com/dms/image/C4D0BAQETBLzeGbOvew/company-logo_200_200/0?e=1607558400&v=beta&t=3JsgvDEkCmJx1RYZKPJY-z93sMJqEx0H3SrAhqjsdMQ",
+                "description": ""  
+            },
+            {
+                "name": "Ministry of Defence",
+                "link": "",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/d/d5/MinistryOfDefence.svg",
+                "description": ""
             }
         ],
         "stack": [
