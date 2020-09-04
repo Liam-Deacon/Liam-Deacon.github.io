@@ -4,7 +4,10 @@
         "pic": "assets/images/profile_img.jpg",
         "punchline": "Developer & Scientist",
         "repo": "https://github.com/Liam-Deacon/Liam-Deacon.github.io",
-        "phone": "7392340840"
+        "phone": "7392340840",
+        "linkedin_id": "liam-matthew-deacon",
+        "email": "liam.deacon@lightbytestechnology.co.uk",
+        "skype_invite": "aChf1z3WHJuV"
     },
     "portfolio": {
         "projects": [
