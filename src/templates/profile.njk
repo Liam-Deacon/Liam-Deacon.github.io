@@ -41,7 +41,7 @@
                                                 <strong class="margin-10px-left text-orange">Education:</strong>
                                             </div>
                                             <div class="col-md-7 col-7">
-                                                <p><u class="dotted_underline">PhD</u> Chemistry & <u class="dotted_underline">BSc</u> (Hons) Physics (First Class)</p>
+                                                <p><u class="dotted_underline">PhD</u> Chemistry &amp; <u class="dotted_underline">BSc</u> (Hons) Physics (First Class)</p>
                                             </div>
                                         </div>
                                     </li>
@@ -63,7 +63,7 @@
                                                 <strong class="margin-10px-left text-lightred">Hobbies:</strong>
                                             </div>
                                             <div class="col-md-7 col-7">
-                                                <p>Rasperry Pi & IoT <i class="fas fa-microchip"></i>,
+                                                <p>Rasperry Pi &amp; IoT <i class="fas fa-microchip"></i>,
                                                     Dogs <i class="fas fa-dog"></i>, Board Games <i class="fas fa-dice"></i>, Video Games <i class="fas fa-gamepad"></i> and Adventure <i class="fas fa-hiking"></i></p>
                                             </div>
                                         </div>
@@ -109,11 +109,11 @@
                                     <div class="col-md-7 col-7">
                                         <h5 class="font-size24 sm-font-size22 xs-font-size20">Professional Skills & Experience</h5>
                                     </div>
-                                    <div class="col-md-5 col-5">
+                                    <div class="col-md-5 col-5 fuzzy-search-div">
                                         <input type="text" class="fuzzy-search" placeholder="Filter Skills">
                                     </div>
                                 </div>
-                                <ul class="list">
+                                <ul class="list sm-no-padding-left">
                                     {%- for skill in data.profile.skill_tags -%}
                                     <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b>{{ skill.title | safe }}</b>" data-content="{{ skill.popover.image | safe }}{{ skill.popover.description | safe }}">{{ skill.title | safe }}</button></li>
                                     {% endfor %}<br>
@@ -121,7 +121,7 @@
                             </div>
                         </div>
                     </div> <!-- Should this be here? -->
-                    <div class="col-md-12">
+                    <div class="col-md-12 text-center">
                         {% set stars = {"1": 0, "2": 35, "3": 70, "4": 95, "5": 114} %}
                         {%- for lang in data.profile.languages -%}
                         <!-- {{ lang.name }} -->
@@ -130,7 +130,7 @@
                             <div class="lang-pic-box">
                                 {{ lang.logo | safe }}
                                 {%- for i_star, offset in stars -%}{% set i_star = i_star | int %}
-                                <i class="{% if i_star > lang.rating %}no-fill-star {% endif %}fa fa-star fa-stack-1x fa-sm" style="padding-left:{{ offset }}%;"></i>
+                                <i class="{% if i_star > lang.rating %}no-fill-star {% endif %}fa fa-star fa-stack-1x fa-sm" style="padding-left:{{ offset }}%"></i>
                                 {% endfor %}
                                 <br>
                                 <p class="lang-text">{{ lang.name }}&nbsp;</p>

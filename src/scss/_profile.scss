@@ -20,7 +20,12 @@ ul.list > li {
    filter: sepia(0.7);
 }
 
- i.fa-star {
+.list {
+   padding-top: 2%;
+   padding-left: 2%;
+}
+
+i.fa-star {
    color: gold;
    text-shadow: 0 0 8px orange;
    -webkit-text-stroke-width: 2px;
@@ -28,45 +33,45 @@ ul.list > li {
    font-size: 0.85rem;
    padding-top: 75%;
    left: -30px;
- }
+}
  
- i.no-fill-star {
+i.no-fill-star {
    color: white;
    text-shadow: 0 0 8px gray;
    -webkit-text-stroke-width: 2px;
    -webkit-text-stroke-color: gray;
- }
+}
  
- .lang-pic {
-    padding-bottom: 110px;
- }
- 
- .lang-pic-box:hover {
-    transform: scale(1.1);
-    transition: all .2s ease-in-out;
- }
- 
- .lang-pic-tooltip {
-    height: 120px;
-    width: 120px;
- }
+.lang-pic {
+   padding-bottom: 120px;
+}
 
- .lang-text {
-    text-align: center;
-    font-size: small;
-    font-weight: 600;
-    left: -10px;
-    padding-top: 14px;
- }
+.lang-pic-box:hover {
+   transform: scale(1.1);
+   transition: all .2s ease-in-out;
+}
  
- .popup-image {
-    float: left;
-    margin-right: 5px;
-    height: 90px;
-    width: auto;
- }
+.lang-pic-tooltip {
+   height: 120px;
+   width: 120px;
+}
+
+.lang-text {
+   text-align: center;
+   font-size: small;
+   font-weight: 600;
+   left: -10px;
+   padding-top: 14px;
+}
  
- .skill-tag {
+.popup-image {
+   float: left;
+   margin-right: 5px;
+   height: 90px;
+   width: auto;
+}
+ 
+.skill-tag {
    top: 2.5px;
    right: 2.5px;
    left: 2.5px;
@@ -81,18 +86,25 @@ ul.list > li {
    text-align: center;
    border-style: outset;
    border-width: 2.5px;
- }
+}
 
- .sql-icon {
-    content: "SQL";
-    color: green;
- }
+.sql-icon {
+   content: "SQL";
+   color: green;
+}
 
- .container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    background-color: $primary_alt;
-    border-radius: 10px;
- }
+.container {
+   padding-top: 50px;
+   padding-bottom: 50px;
+   padding-left: 50px;
+   padding-right: 50px;
+   background-color: $primary_alt;
+   border-radius: 10px;
+}
+
+@media screen and (max-width: 991px) {
+   .fuzzy-search-div {
+      padding-left: 6%;
+      padding-right: 2%;
+   }
+}
