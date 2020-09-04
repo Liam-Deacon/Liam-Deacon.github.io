@@ -472,6 +472,11 @@ ul.list > li {
   filter: sepia(0.7);
 }
 
+.list {
+  padding-top: 2%;
+  padding-left: 2%;
+}
+
 i.fa-star {
   color: gold;
   text-shadow: 0 0 8px orange;
@@ -490,7 +495,7 @@ i.no-fill-star {
 }
 
 .lang-pic {
-  padding-bottom: 110px;
+  padding-bottom: 120px;
 }
 
 .lang-pic-box:hover {
@@ -549,6 +554,12 @@ i.no-fill-star {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 991px) {
+  .fuzzy-search-div {
+    padding-left: 6%;
+    padding-right: 2%;
+  }
+}
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
