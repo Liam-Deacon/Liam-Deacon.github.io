@@ -739,6 +739,11 @@ i.no-fill-star {
   color: inherit;
 }
 
+.contact-form textarea {
+  width: 100%;
+  height: 150px;
+}
+
 .contact-form .btnContact {
   width: 50%;
   border: none;
@@ -758,6 +763,11 @@ i.no-fill-star {
   background-color: darkorange;
   border: none;
   cursor: pointer;
+}
+
+.submit-confirmation {
+  font-weight: bold;
+  font-size: larger;
 }
 
 .profile-img {
