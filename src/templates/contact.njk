@@ -4,7 +4,8 @@
             <div class="contact-image">
                 <img src="https://www.svgrepo.com/show/112907/speech-bubbles.svg" alt="" />
             </div>
-            <form method="post">
+            <!-- NOTE: use https://formspree.io to handle contact as site is static -->
+            <form method="post" action="{{ data.contact.formspree_url | safe }}">
                 <h3>Drop me a line</h3>
                 <div class="team-single-icons-alt row text-center">
                     <ul class="no-margin">
@@ -22,24 +23,29 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                            <input type="text" name="name" class="form-control" placeholder="Your Name *" value="" required/>
+                        </div>
+                        <div class="form-group"> <!-- NOTE: hidden (so subject is fixed) - change type -> "text" to allow user editing -->
+                            <input type="hidden" name="_subject" class="form-control" placeholder="Subject" value="Profile Page Contact" />
                         </div>
                         <div class="form-group">
-                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                            <input type="text" name="_replyto" class="form-control" placeholder="Your Email *" value="" required/>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                            <input type="text" name="phone" class="form-control" placeholder="Your Phone Number *" value="" />
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                            <textarea name="message" class="form-control" placeholder="Your Message *" required></textarea>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" style="margin-right: 0px">
                         <div class="form-group">
-                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" onclick="$('#submitConfirmatio').hidden = false;" />
                         </div>
+                        <br>
+                        <span id="submitConfirmation" class="submit-confirmation" hidden>Email sent - thanks!</span>
                     </div>
                 </div>
             </form>
