@@ -773,15 +773,28 @@ gelgiyrghhgrkln<nav class="navbar navbar-default navbar-expand-md">
 <footer>
     <div class="container container-fluid">
         <h3>Companies I have worked with</h3>
-        <div id="companies"><img src="https://www.diamond.ac.uk/dam/jcr:065263ac-e27e-4ed1-b6fe-4cfdf71d8fe6/dls_logo.2020-02-21-14-12-04.png" alt="" href="https://www.diamond.ac.uk/Home/About.html" data-html="true" data-toggle="tooltip" title="<b>Diamond Light Source</b><br><br>I worked as the B07 VERSOX beamline&#39;s support scientist between 2013-2015. The role involved assisting in the design, procurement and development of data acquisition systems for soft x-ray analysis under near ambient pressure."/>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Reading_shield.png" alt="" href="" data-html="true" data-toggle="tooltip" title="<b>University of Reading</b><br><br>During my PhD I researched polar oxide surfaces in nanoscience / material science. I wrote software for interfacing equipment as well as for data analysis. My research allowed me to gain exposure into using Linux clusters for computational modelling, amongst other uses."/>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/HP_logo_2012.svg" alt="" href="" data-html="true" data-toggle="tooltip" title="<b>Hewlett Packard</b><br><br>I worked on the AMPA Air Mission Planning Aid, which is a software tool used by the RAF."/>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Hewlett_Packard_Enterprise_logo.svg" alt="" href="" data-html="true" data-toggle="tooltip" title="<b>Hewlett Packard Enterprise</b><br><br>As part of my work for HPE I wrote Python, C &amp; C++, gained exposure to the whole SDL and used GUI automation tools for integration testing."/>
-            <img src="https://upload.wikimedia.org/wikipedia/en/4/4c/NATS_logo.svg" alt="" href="https://www.nats.aero/services-products/" data-html="true" data-toggle="tooltip" title="<b>National Air Transport Services</b><br><br>I have acted as technical lead on an Azure cloud platform aimed at data science and research as well on a big data biometrics project collecting ~5TB/hour. I consulted on the direction for the technology stack for NATS&#39; collaboration with the Alan Turing Institute into research for automating air traffic &amp; was a lead proponent in the use of modern DevSecOps to facilitate this research."/>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Alan_Turing_Institute_logo.svg" alt="" href="https://www.turing.ac.uk/collaborate-turing/current-partnerships-and-collaborations/nats" data-html="true" data-toggle="tooltip" title="<b>Alan Turing Institute</b><br><br>I collaborated with the Alan Turing Institute as part of my work at NATS. I attended data study groups (week-long hackathon challenges) &amp; prepared aviation tools and data for the April 2019  challenge at by NATS)."/>
+        <div id="companies">
+            <img id='diamond_light_source' src="https://www.diamond.ac.uk/dam/jcr:065263ac-e27e-4ed1-b6fe-4cfdf71d8fe6/dls_logo.2020-02-21-14-12-04.png" alt="" href="https://www.diamond.ac.uk/Home/About.html" data-html="true" data-toggle="tooltip"
+                 class="border-animation__inner" title="<b>Diamond Light Source</b><br><br>I worked as the B07 VERSOX beamline&#39;s support scientist between 2013-2015. The role involved assisting in the design, procurement and development of data acquisition systems for soft x-ray analysis under near ambient pressure." onclick='window.select_company("diamond_light_source")'/>
+            
+            <img id='university_of_reading' src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Reading_shield.png" alt="" href="" data-html="true" data-toggle="tooltip"
+                 class="border-animation__inner" title="<b>University of Reading</b><br><br>During my PhD I researched polar oxide surfaces in nanoscience / material science. I wrote software for interfacing equipment as well as for data analysis. My research allowed me to gain exposure into using Linux clusters for computational modelling, amongst other uses." onclick='window.select_company("university_of_reading")'/>
+            
+            <img id='hewlett_packard' src="https://upload.wikimedia.org/wikipedia/commons/a/ad/HP_logo_2012.svg" alt="" href="" data-html="true" data-toggle="tooltip"
+                 class="border-animation__inner" title="<b>Hewlett Packard</b><br><br>I worked on the AMPA Air Mission Planning Aid, which is a software tool used by the RAF." onclick='window.select_company("hewlett_packard")'/>
+            
+            <img id='hewlett_packard_enterprise' src="https://upload.wikimedia.org/wikipedia/commons/4/46/Hewlett_Packard_Enterprise_logo.svg" alt="" href="" data-html="true" data-toggle="tooltip"
+                 class="border-animation__inner" title="<b>Hewlett Packard Enterprise</b><br><br>As part of my work for HPE I wrote Python, C &amp; C++, gained exposure to the whole SDL and used GUI automation tools for integration testing." onclick='window.select_company("hewlett_packard_enterprise")'/>
+            
+            <img id='national_air_transport_services' src="https://upload.wikimedia.org/wikipedia/en/4/4c/NATS_logo.svg" alt="" href="https://www.nats.aero/services-products/" data-html="true" data-toggle="tooltip"
+                 class="border-animation__inner" title="<b>National Air Transport Services</b><br><br>I have acted as technical lead on an Azure cloud platform aimed at data science and research as well on a big data biometrics project collecting ~5TB/hour. I consulted on the direction for the technology stack for NATS&#39; collaboration with the Alan Turing Institute into research for automating air traffic &amp; was a lead proponent in the use of modern DevSecOps to facilitate this research." onclick='window.select_company("national_air_transport_services")'/>
+            
+            <img id='alan_turing_institute' src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Alan_Turing_Institute_logo.svg" alt="" href="https://www.turing.ac.uk/collaborate-turing/current-partnerships-and-collaborations/nats" data-html="true" data-toggle="tooltip"
+                 class="border-animation__inner" title="<b>Alan Turing Institute</b><br><br>I collaborated with the Alan Turing Institute as part of my work at NATS. I attended data study groups (week-long hackathon challenges) &amp; prepared aviation tools and data for the April 2019  challenge at by NATS)." onclick='window.select_company("alan_turing_institute")'/>
             
         </div>
         <br><br>
+        <button id='companyInfo' class='btn' data-toggle="modal" data-target="">More info</button>
         <hr>
         <h3>Technology stack used for this site</h3>
         <div id="tech"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="" href="https://nodejs.org/en/about/" data-html="true" data-toggle="tooltip" title="Node.js - Javascript runtime"/>
@@ -798,7 +811,199 @@ gelgiyrghhgrkln<nav class="navbar navbar-default navbar-expand-md">
         <span style="font-size: larger">If you 💖 this page, then please consider leaving a ⭐ at <a href="https://github.com/Liam-Deacon/Liam-Deacon.github.io"><i class="fi fi-github"></i></a></span>
     </div>
     <b>Copyright &copy; 2020 Liam Deacon</b> | Some rights reserved | <u onclick="$('#termsOfUseModal').modal('show');">Terms of Use</u> | <u onclick="$('#acknowledgementsModal').modal('show');">Acknowledgements</u>
-</footer><!-- Load scripts last for performance reasons -->
+</footer><!-- Companies Modal -->
+<div class="modal fade" id="company_modal_diamond_light_source" tabindex="-1" role="dialog" aria-labelledby="acknowledgementsModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Diamond Light Source</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="popup-image" src="https://www.diamond.ac.uk/dam/jcr:065263ac-e27e-4ed1-b6fe-4cfdf71d8fe6/dls_logo.2020-02-21-14-12-04.png"/>
+                I worked as the B07 VERSOX beamline&#39;s support scientist between 2013-2015. The role involved assisting in the design, procurement and development of data acquisition systems for soft x-ray analysis under near ambient pressure.
+                <br>
+                <h4 style="font-size: medium"><i class="fa fa-tag">&nbsp;</i>Tags</h4>
+                <ul class="list"><li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Atmospheric Chemistry</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">X-Ray Photoelectron Spectroscopy</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Beamline Design</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Procurement</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Testing</button></li>
+                    <br>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Companies Modal -->
+<div class="modal fade" id="company_modal_university_of_reading" tabindex="-1" role="dialog" aria-labelledby="acknowledgementsModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">University of Reading</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="popup-image" src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Reading_shield.png"/>
+                During my PhD I researched polar oxide surfaces in nanoscience / material science. I wrote software for interfacing equipment as well as for data analysis. My research allowed me to gain exposure into using Linux clusters for computational modelling, amongst other uses.
+                <br>
+                <h4 style="font-size: medium"><i class="fa fa-tag">&nbsp;</i>Tags</h4>
+                <ul class="list"><li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Data Acquisition</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Data Analysis</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Surface Science</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Scanning Tunneling Microsopy (STM)</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">X-Ray Photoelectron Spectroscopy (XPS)</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Mass Spectrometry</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Spintronics</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Polar Oxide Surfaces</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Semiconductors</button></li>
+                    <br>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Companies Modal -->
+<div class="modal fade" id="company_modal_hewlett_packard" tabindex="-1" role="dialog" aria-labelledby="acknowledgementsModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Hewlett Packard</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="popup-image" src="https://upload.wikimedia.org/wikipedia/commons/a/ad/HP_logo_2012.svg"/>
+                I worked on the AMPA Air Mission Planning Aid, which is a software tool used by the RAF.
+                <br>
+                <h4 style="font-size: medium"><i class="fa fa-tag">&nbsp;</i>Tags</h4>
+                <ul class="list"><li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Software Development Lifecycle (SDL)</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">AMPA</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Bug fixing</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">GUI programming</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Unit Testing</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Automated GUI Testing</button></li>
+                    <br>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Companies Modal -->
+<div class="modal fade" id="company_modal_hewlett_packard_enterprise" tabindex="-1" role="dialog" aria-labelledby="acknowledgementsModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Hewlett Packard Enterprise</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="popup-image" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Hewlett_Packard_Enterprise_logo.svg"/>
+                As part of my work for HPE I wrote Python, C &amp; C++, gained exposure to the whole SDL and used GUI automation tools for integration testing.
+                <br>
+                <h4 style="font-size: medium"><i class="fa fa-tag">&nbsp;</i>Tags</h4>
+                <ul class="list"><li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Software Development Lifecycle (SDL)</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">AMPA</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Bug fixing</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">GUI programming</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Unit Testing</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Automated GUI Testing</button></li>
+                    <br>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Companies Modal -->
+<div class="modal fade" id="company_modal_national_air_transport_services" tabindex="-1" role="dialog" aria-labelledby="acknowledgementsModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">National Air Transport Services</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="popup-image" src="https://upload.wikimedia.org/wikipedia/en/4/4c/NATS_logo.svg"/>
+                I have acted as technical lead on an Azure cloud platform aimed at data science and research as well on a big data biometrics project collecting ~5TB/hour. I consulted on the direction for the technology stack for NATS&#39; collaboration with the Alan Turing Institute into research for automating air traffic &amp; was a lead proponent in the use of modern DevSecOps to facilitate this research.
+                <br>
+                <h4 style="font-size: medium"><i class="fa fa-tag">&nbsp;</i>Tags</h4>
+                <ul class="list"><li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Technical Lead</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Cloud Architecture</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Biometrics</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Digital Twin</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Data Science</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Data Engineering</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Exploratory Data Analysis (EDA)</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Rapid Prototyping</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">System Architecting</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Domain Modelling</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Tutorials</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Microservices</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Big Data</button></li>
+                    <br>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Companies Modal -->
+<div class="modal fade" id="company_modal_alan_turing_institute" tabindex="-1" role="dialog" aria-labelledby="acknowledgementsModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Alan Turing Institute</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="popup-image" src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Alan_Turing_Institute_logo.svg"/>
+                I collaborated with the Alan Turing Institute as part of my work at NATS. I attended data study groups (week-long hackathon challenges) &amp; prepared aviation tools and data for the April 2019  challenge at by NATS).
+                <br>
+                <h4 style="font-size: medium"><i class="fa fa-tag">&nbsp;</i>Tags</h4>
+                <ul class="list"><li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Data ETL</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Exploratory Data Analysis (EDA)</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Geospatial Data</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Protected Data</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Private Cloud</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Data Cleaning</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Data Modelling</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Machine Learning</button></li>
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b></b>" data-content="">Aerospace Domain</button></li>
+                    <br>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Load scripts last for performance reasons -->
 
 <!-- Do the following actions on document load event -->
 <script>
