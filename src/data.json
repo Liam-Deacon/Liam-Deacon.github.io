@@ -352,51 +352,159 @@
                 "name": "Diamond Light Source",
                 "link": "https://www.diamond.ac.uk/Home/About.html",
                 "logo": "https://www.diamond.ac.uk/dam/jcr:065263ac-e27e-4ed1-b6fe-4cfdf71d8fe6/dls_logo.2020-02-21-14-12-04.png",
+                "tags": [
+                    "Atmospheric Chemistry",
+                    "X-Ray Photoelectron Spectroscopy",
+                    "Beamline Design", "Procurement", "Testing"
+                ],
+                "technologies": [
+                    "Python",
+                    "C",
+                    "RedHat Enterprise Linux",
+                    "git SCM"
+                ],
                 "description": "I worked as the B07 VERSOX beamline's support scientist between 2013-2015. The role involved assisting in the design, procurement and development of data acquisition systems for soft x-ray analysis under near ambient pressure."
             },
             {
                 "name": "University of Reading",
                 "link": "",
                 "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Reading_shield.png",
+                "tags": [
+                    "Data Acquisition",
+                    "Data Analysis",
+                    "Surface Science",
+                    "Scanning Tunneling Microsopy (STM)",
+                    "X-Ray Photoelectron Spectroscopy (XPS)",
+                    "Mass Spectrometry",
+                    "Spintronics",
+                    "Polar Oxide Surfaces",
+                    "Semiconductors"
+                ],
+                "technologies": [
+                    "Python",
+                    "JavaScript",
+                    "VB6",
+                    "LabVIEW",
+                    "Sun Grid Engine",
+                    "MOSIX Cluster",
+                    "Distributed computing",
+                    "OpenSUSE Linux",
+                    "C",
+                    "Bash Scripting"
+                ],
                 "description": "During my PhD I researched polar oxide surfaces in nanoscience / material science. I wrote software for interfacing equipment as well as for data analysis. My research allowed me to gain exposure into using Linux clusters for computational modelling, amongst other uses."
             },
             {
                 "name": "Hewlett Packard",
                 "link": "",
                 "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ad/HP_logo_2012.svg",
+                "tags": [
+                    "Software Development Lifecycle (SDL)",
+                    "AMPA",
+                    "Bug fixing",
+                    "GUI programming",
+                    "Unit Testing",
+                    "Automated GUI Testing"
+                ],
+                "technologies": [
+                    "C",
+                    "C++",
+                    "Python",
+                    "RedHat Enterprise Linux",
+                    "SikuliX",
+                    "Fortran",
+                    "ClearCase SCM"
+                ],
                 "description": "I worked on the AMPA Air Mission Planning Aid, which is a software tool used by the RAF."
             },
             {
                 "name": "Hewlett Packard Enterprise",
                 "link": "",
                 "logo": "https://upload.wikimedia.org/wikipedia/commons/4/46/Hewlett_Packard_Enterprise_logo.svg",
+                "tags": [
+                    "Software Development Lifecycle (SDL)",
+                    "AMPA",
+                    "Bug fixing",
+                    "GUI programming",
+                    "Unit Testing",
+                    "Automated GUI Testing"
+                ],
+                "technologies": [
+                    "C",
+                    "C++",
+                    "Python",
+                    "RedHat Enterprise Linux"
+                ],
                 "description": "As part of my work for HPE I wrote Python, C & C++, gained exposure to the whole SDL and used GUI automation tools for integration testing."
             },
             {
                 "name": "National Air Transport Services",
                 "link": "https://www.nats.aero/services-products/",
                 "logo": "https://upload.wikimedia.org/wikipedia/en/4/4c/NATS_logo.svg",
+                "tags": [
+                    "Technical Lead",
+                    "Cloud Architecture",
+                    "Biometrics",
+                    "Digital Twin",
+                    "Data Science",
+                    "Data Engineering",
+                    "Exploratory Data Analysis (EDA)",
+                    "Rapid Prototyping",
+                    "System Architecting",
+                    "Domain Modelling",
+                    "Tutorials",
+                    "Microservices",
+                    "Big Data"
+                ],
+                "technologies": [
+                    "CI/CD",
+                    "Azure Cloud",
+                    "Azure Storage",
+                    "Data Warehousing",
+                    "SQL",
+                    "C",
+                    "Ubuntu Linux",
+                    "Flask",
+                    "Python",
+                    "pandas",
+                    "matplotlib",
+                    "Jupyter Notebooks",
+                    "shapely",
+                    "plotly",
+                    "dash",
+                    "OpenCV",
+                    "Raspberry Pi",
+                    "RabbitMQ",
+                    "Kafka",
+                    "Azure DevOps"
+                ],
                 "description": "I have acted as technical lead on an Azure cloud platform aimed at data science and research as well on a big data biometrics project collecting ~5TB/hour. I consulted on the direction for the technology stack for NATS' collaboration with the Alan Turing Institute into research for automating air traffic & was a lead proponent in the use of modern DevSecOps to facilitate this research."
             },
             {
                 "name": "Alan Turing Institute",
                 "link": "https://www.turing.ac.uk/collaborate-turing/current-partnerships-and-collaborations/nats",
                 "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Alan_Turing_Institute_logo.svg",
+                "tags": [
+                    "Data ETL",
+                    "Exploratory Data Analysis (EDA)",
+                    "Geospatial Data",
+                    "Protected Data",
+                    "Private Cloud",
+                    "Data Cleaning",
+                    "Data Modelling",
+                    "Machine Learning",
+                    "Aerospace Domain"
+                ],
+                "technologies": [
+                    "Azure Cloud",
+                    "Python",
+                    "GPU compute",
+                    "scikit-learn",
+                    "pandas",
+                    "Jupyter",
+                    "matplotlib"
+                ],
                 "description": "I collaborated with the Alan Turing Institute as part of my work at NATS. I attended data study groups (week-long hackathon challenges) & prepared aviation tools and data for the April 2019  challenge at by NATS)."
-            }
-        ],
-        "companies_extra": [
-            {
-                "name": "Parico Ltd.",
-                "link": "https://www.linkedin.com/company/paricoltd/about/",
-                "logo": "https://media-exp1.licdn.com/dms/image/C4D0BAQETBLzeGbOvew/company-logo_200_200/0?e=1607558400&v=beta&t=3JsgvDEkCmJx1RYZKPJY-z93sMJqEx0H3SrAhqjsdMQ",
-                "description": ""  
-            },
-            {
-                "name": "Ministry of Defence",
-                "link": "",
-                "logo": "https://upload.wikimedia.org/wikipedia/en/d/d5/MinistryOfDefence.svg",
-                "description": ""
             }
         ],
         "stack": [
