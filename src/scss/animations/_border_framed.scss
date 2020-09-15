@@ -1,0 +1,76 @@
+/* Taken from https://codepen.io/chancesq/pen/qBOyQoW
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+<div class="btn">
+  <span class="noselect">Framed</span>
+</div>
+*/
+
+.framed {
+    height: 100vh;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    width: 150px;
+    height: 50px;
+    border: 1px solid #333;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    transition: 1s;
+}
+
+.framed::before, .framed::after {
+    position: absolute;
+    background: #eee;
+    z-index: -1;
+    transition: 1s;
+    content: '';
+}
+
+.framed::before {
+    height: 50px;
+    width: 130px;
+}
+
+.framed::after {
+    width: 150px;
+    height: 30px;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+}
+
+.framed:hover::before {
+    width: 0px;
+    background: #fff;
+}
+
+.framed:hover::after {
+    height: 0px;
+    background: #fff;
+}
+
+.framed:hover {
+    background: #fff;
+}
