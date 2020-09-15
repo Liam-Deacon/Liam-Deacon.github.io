@@ -3,10 +3,13 @@
         <h3>Companies I have worked with</h3>
         <div id="companies">
             {%- for company in data.footer.companies -%}
-            <img src="{{ company.logo }}" alt="" href="{{ company.link }}" data-html="true" data-toggle="tooltip" title="<b>{{ company.name }}</b><br><br>{{ company.description }}"/>
+            {% set company_id = company.name | lower | replace(" ", "_") | replace("-", "_") %}
+            <img id='{{ company_id }}' src="{{ company.logo }}" alt="" href="{{ company.link }}" data-html="true" data-toggle="tooltip"
+                 class="border-animation__inner" title="<b>{{ company.name }}</b><br><br>{{ company.description }}" onclick='window.select_company("{{ company_id }}")'/>
             {% endfor %}
         </div>
         <br><br>
+        <button id='companyInfo' class='btn' data-toggle="modal" data-target="">More info</button>
         <hr>
         <h3>Technology stack used for this site</h3>
         <div id="tech">
@@ -21,3 +24,37 @@
     </div>
     <b>Copyright &copy; 2020 {{ data.common.name }}</b> | Some rights reserved | <u onclick="$('#termsOfUseModal').modal('show');">Terms of Use</u> | <u onclick="$('#acknowledgementsModal').modal('show');">Acknowledgements</u>
 </footer>
+
+{%- for company in data.footer.companies -%}
+{%- set company_id = company.name | lower | replace(" ", "_") | replace("-", "_") -%}
+<!-- Companies Modal -->
+<div class="modal fade" id="company_modal_{{ company_id }}" tabindex="-1" role="dialog" aria-labelledby="acknowledgementsModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">{{ company.name }}</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="popup-image" src="{{ company.logo }}"/>
+                {{ company.description }}
+                <br>
+                <h4 style="font-size: medium"><i class="fa fa-tag">&nbsp;</i>Tags</h4>
+                <ul class="list">
+                    {%- for tag in company.tags -%}
+                    <li><button class="skill-tag" data-html="true" data-placement="bottom" data-toggle="popover" title="<b>{{ skill.title | safe }}</b>" data-content="{{ skill.popover.image | safe }}{{ skill.popover.description | safe }}">{{ tag | safe }}</button></li>
+                    {% endfor %}<br>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                {%- if project.link -%}
+                <a href="{{ project.link }}"><button type="button" class="btn btn-secondary"><i class="fa fa-github">&nbsp;</i>Source Code</button></a>
+                {% endif %}
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
