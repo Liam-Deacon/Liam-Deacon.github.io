@@ -1,6 +1,7 @@
 // Styling for footer
 
 @use 'variables';
+@use 'animations/border_pulse';
 
 footer {
    background: $primary_alt;
@@ -34,6 +35,11 @@ footer {
       padding: 15px;
       cursor: pointer;
 
+      border-style: none;
+      border-width: 4px;
+      border-color: goldenrod;
+      border-radius: 8px;
+
       transition: all 0.5s ease-in-out;
       // transition-delay: 0.2s;
       // transition-duration: 1s;
@@ -54,5 +60,44 @@ footer {
       padding-left: 40%;
       padding-right: 40%;
    }
- }
+
  
+ .btn {
+   width: 25%;
+   border: none;
+   border-radius: 1rem;
+   padding: 1.5%;
+   background: rgba($primary, 0.45);
+   font-weight: 600;
+   font-size: medium;
+   color: #fff;
+   cursor: pointer;
+}
+
+ .btn:hover {
+   min-width: 50px;
+   border-radius: 1rem;
+   padding: 1.5%;
+   color: #fff;
+   background-color: darkorange;
+   border: none;
+   cursor: pointer;
+ }
+
+}
+
+.visible {
+   visibility: visible;
+   opacity: 1;
+   transition: opacity 2s linear;
+ }
+
+.hidden {
+   visibility: hidden;
+   opacity: 0;
+   transition: visibility 0s 2s, opacity 2s linear;
+}
+
+#companyInfo {
+   visibility: hidden;
+}
