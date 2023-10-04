@@ -83,7 +83,7 @@
         "gulp-watch": "^5.0.1",
         "html-minifier": "^4.0.0",
         "js-beautify": "^1.11.0",
-        "postcss": "7.0.32",
+        "postcss": "8.4.31",
         "prettier": "^2.0.5",
         "sass": "^1.26.8",
         "serve": "^11.3.2",
